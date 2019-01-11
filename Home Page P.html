@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Homepage</title>
+	<!-- CSS -->
+	<link rel='stylesheet' href='Home Page P.css' type='text/css'/>
+	<!-- JS -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script src="Home Page P.js"></script>	
+	<!-- Font style import -->
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,300i,600');
+		@import url('https://fonts.googleapis.com/css?family=Sail');
+		@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One');
+	</style>
+
+	<style>
+		a:link { text-decoration: none; 
+			color: none; }
+		a:visited { text-decoration: none; 
+			color: white; }
+		a:hover { text-decoration: none;  
+			color: white; }
+		a:focus { text-decoration: none; 
+			color: white; }
+		a:active { text-decoration: none;  
+			color: white; }
+	</style>
+
+</head>
+
+<body>
+
+<div class=PgOne>
+	
+	<div class="navbar">
+		<div>
+			<a href="#PgTwo" onclick = "scrollToPgTwo()">about</a>
+		</div><div>
+			<a href="#PgThree" onclick = "scrollToPgThree()">experience</a>
+		</div><div>
+			<a href="Resume.pdf" target="_blank">resume</a>
+		</div><div>
+			<a href="#PgFour" onclick = "scrollToPgFour()">contact</a>
+		</div>
+	</div>
+
+	<div class=main>
+		<div class=hi>Hi! I'm</div>
+		<div class=name>Zaeda Meherin</div>
+	</div>
+
+</div>
+
+<div id=PgTwo>
+	<div class=main2>
+		<img src="Pics/Transparent Patterns/2L.png" class=L>
+		<div class=PgTwoImg>
+			<img src="Pics/Head Shots/ME3.jpg" class=MeImg>
+	 		<div class=CircleGold></div>
+	 		<div class=CircleBlack></div>
+			<div class=Square></div>
+		</div>
+		<img src="Pics/Transparent Patterns/2R.png" class=R>
+	</div>
+	<div class=AboutMe>About Me</div>
+	<div class="MeBlurb">
+		<span class=HiImZ>Hi! I'm <span class=Z>Zaeda</span></span>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	</div>
+</div>
+
+<div id=PgThree>
+	<div class=main3>
+		<div class=Experience>Experience</div>
+		<div class=Rh1></div>
+		<div class=Rh2></div>
+	</div>
+	<div class=TransparentBox>
+		<div class=Hackital>
+			<div class=Logo>
+				<div class=Sq1></div>
+				<div class=Sq2></div>
+				<img src="Pics/Logos/Hackital.png" class=LogoImg>
+	        	<div class=P> 
+	          		<span class=Position>Hackital<br></span>
+					<span class=CompandTime>George Washington University | Nov 10, 2018</span></div>
+				</div>
+    		<div class=Text>
+    			Hackital is a Hackathon held at George Washington University.  At the hackathon, I explored BlockChain and cryptocurrency. Written in Solidity, I created a donation program  that processes ethereum exchanges and donations to charity.</div>
+		</div> <!-- END Hackital -->
+		<div class=Student>
+			<div class=Logo>
+				<div class=Sq1></div>
+				<div class=Sq2></div>
+				<img src="Pics/Logos/Tundie.png" class=LogoImg>
+				<div class=P> 
+	          		<span class=Position>Student<br></span>
+					<span class=CompandTime>University of Virginia | 2017-2021</span></div>
+				</div>
+			<div class=Text>
+				I am currently a 2nd year student at the University of Virginia, majoring in computer science. After graduation, I hope to pursue a career in web development, software development, or data science.</div>
+			</div>
+		</div> <!-- END Student -->
+	</div> <!-- END TransparentBox -->
+</div> <!-- END PgThree -->
+
+<div id="PgFour">
+	<div class=Contact>Contact</div>
+	<div class=Form>
+		<form action="/action_page.php">
+			<input type="text" name="name" placeholder="Name"><br>
+			<input type="email" name="email" placeholder="Email"><br>
+			<textarea name="message" class="message-box" placeholder="Message"></textarea>
+			<input type="Submit" name="submit" value="Submit">
+		</form>
+	</div>
+</div>
+
+</body>
+</html>
