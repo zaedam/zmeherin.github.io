@@ -466,7 +466,8 @@ input:-webkit-autofill {
 
 @media only screen and (max-width: 685px) {
     .navbar {
-        min-width: 400px;
+        min-width: 10px;
+        margin-right: 0;
     }
     .navbar div {
         width: 16%;
