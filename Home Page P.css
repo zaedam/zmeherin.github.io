@@ -7,7 +7,7 @@ body {
 .PgOne {
     color: white;
     background-color: black;
-    background-image: url('Pics/Backgrounds/HD/RH3.jpg'); /*AS3.jpg*/
+    background-image: url('RH3.jpg'); /*AS3.jpg*/
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;
@@ -136,7 +136,7 @@ body {
 }
 #PgThree {
     background-color: black; /*#101519*/
-    background-image: url('Pics/Backgrounds/HD/PitchBlack.jpg'); /*LightBlack*/
+    background-image: url('PitchBlack.jpg'); /*LightBlack*/
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;
