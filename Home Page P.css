@@ -464,6 +464,15 @@ input:-webkit-autofill {
     }
 }
 
+@media only screen and (max-width: 685px) {
+    .navbar {
+        min-width: 400px;
+    }
+    .navbar div {
+        width: 16%;
+    }
+}
+
 @media only screen and (max-width: 515px) {
     .Flower {
         height: 200px; width: 200px;
