@@ -394,6 +394,16 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 685px) {
+    .TransparentBox {
+        width: 55%;
+    }
+    .navbar {
+        min-width: 10px;
+        margin-right: 0;
+    }
+    .navbar div {
+        width: 16%;
+    }
     .name {
         width: 75%;
         min-width: 0px;
@@ -461,16 +471,6 @@ input:-webkit-autofill {
     }
     .Form {
         width: 400px
-    }
-}
-
-@media only screen and (max-width: 685px) {
-    .navbar {
-        min-width: 10px;
-        margin-right: 0;
-    }
-    .navbar div {
-        width: 16%;
     }
 }
 
