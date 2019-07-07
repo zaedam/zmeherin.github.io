@@ -324,7 +324,15 @@ input[type=submit] {
 input[type="submit"]:hover {
     background: #DAA520; /*43A8E4*/
 }
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #E5E5E5 inset !important;
+}
+input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+}
 .Form {
   /*border-radius: 5px;
   background-color: #f2f2f2;
