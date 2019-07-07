@@ -324,15 +324,6 @@ input[type=submit] {
 input[type="submit"]:hover {
     background: #DAA520; /*43A8E4*/
 }
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active  {
-    -webkit-box-shadow: 0 0 0 30px red inset !important;
-}
-input:-webkit-autofill {
-    -webkit-text-fill-color: yellow !important;
-}
 
 .Form {
   /*border-radius: 5px;
@@ -479,3 +470,175 @@ input:-webkit-autofill {
         width: 280px;
     }
 }
+
+    /*display: flex; 
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;*/
+
+    /*width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 1;*/
+    /*padding-top: 10%; padding-bottom: 10%;*/
+    /*display: table-cell; text-align: center; vertical-align: middle;*/
+    /* transform: translate(-50%, -50%);
+        position: absolute; and navbar was relative
+        top: 50%;
+        left: 50%;
+        */
+            /*resize: both;
+            overflow: auto;*/
+    /*display: flex; justify-content: center;
+        height: calc(100vh - 100px);
+        align-items: center;*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.PgTwoImg {
+    position: relative;
+    height: 465px; width: 465px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.CircleGold { /*250, 287, 263, 230*/
+   /* position: absolute;
+    z-index:1;
+    width: 390px;
+    height: 390px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 50%;
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+}
+.CircleBlack { 
+    position: absolute;
+    z-index:1;
+    width: 365px;
+    height: 365px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.Square {
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    z-index:2;
+    
+    top: 15%;
+    left: 15%;
+
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+.MeImg {
+    position: absolute;
+    width: 350px;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.AboutMe {
+    font-size: 45px; *//*! change with media query */
+    /*font-family: 'Sail', cursive;
+    width: 100%;
+    margin: 10% auto 3% auto;
+    text-align: center;
+    position: absolute;
+}
+.MeBlurb {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.75em;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 125px auto;
+*/
+    /*margin: 50px 25px;
+    padding: 50px;
+    background-color: #181818;
+    color: white;
+    border: 1px solid #DAA520;
+    margin-bottom: 75px;*/
+/*}*/
+
+
+
+
+
+/*.PgTwoImg {
+    height: 325px; width: 325px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.CircleGold { /*250, 287, 263, 230*/
+    /*position: absolute;
+    z-index:1;
+    width: 280px;
+    height: 280px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 50%;
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+}
+.CircleBlack { 
+    position: absolute;
+    z-index:1;
+    width: 263px;
+    height: 263px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.Square {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    z-index:2;
+    
+    top: 15%;
+    left: 15%;
+
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+*/
