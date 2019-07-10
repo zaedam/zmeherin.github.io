@@ -10,8 +10,7 @@ body {
 
 .PgOne {
     color: white;
-    /*background-image: url('Pics/Backgrounds/HD/PNG/RH3.png');*/
-    background-image: url('Pics/Backgrounds/HD/AS3(2).jpg');
+    background-image: url('Pics/Backgrounds/HD/PNG/RH3.png');
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
@@ -19,7 +18,7 @@ body {
     background-clip: border-box
     */
     background-attachment: fixed;
-    background-color: black;
+    background-color: #1E2834;
 
     text-align: center;
     height: 100vh; width: 100%;
