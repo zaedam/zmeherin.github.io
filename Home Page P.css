@@ -1,7 +1,7 @@
-/*html {
+html { /*doesn't work on Safari*/
   scroll-behavior: smooth;
 }
-*/
+
 body {
     background-color: #E5E5E5;
     margin: 0;
@@ -11,7 +11,7 @@ body {
 .PgOne {
     color: white;
     background-color: black;
-    background-image: url('Pics/Backgrounds/HD/RH3.jpg'); /*AS3.jpg*/
+    background-image: url('Pics/Backgrounds/HD/RH3toPNG.png'); /*AS3.jpg*/
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;
@@ -411,7 +411,7 @@ input:-webkit-autofill {
     .name {
         width: 75%;
         min-width: 0px;
-        }
+    }
     .AboutMe {
         margin: 15% auto 5% auto;
     }
@@ -492,32 +492,16 @@ input:-webkit-autofill {
         width: 280px;
     }
 }
-
-    /*display: flex; 
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;*/
-
-    /*width: 50%;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-grow: 1;*/
-    /*padding-top: 10%; padding-bottom: 10%;*/
-    /*display: table-cell; text-align: center; vertical-align: middle;*/
-    /* transform: translate(-50%, -50%);
-        position: absolute; and navbar was relative
-        top: 50%;
-        left: 50%;
-        */
-            /*resize: both;
-            overflow: auto;*/
-    /*display: flex; justify-content: center;
-        height: calc(100vh - 100px);
-        align-items: center;*/
-
+@media only screen and (max-width: 460px) {
+    .name {
+        font-size: 80px;
+    }
+}
+@media only screen and (max-width: 410px) {
+    .name {
+        font-size: 70px;
+    }
+}
 
 
 
