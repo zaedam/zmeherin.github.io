@@ -5,14 +5,12 @@ function scrollToPgTwo() {
 	e.stopPropagation;
 }
 function scrollToPgThree() {
-	$('html,body').animate({
-		scrollTop: $("#PgThree").offset().top}, 1400);
+	$('html,body').animate({ scrollTop: $("#PgThree").offset().top}, 1400);
 	event.preventDefault();
 	e.stopPropagation;
 }
 function scrollToPgFour() {
-	$('html,body').animate({
-		scrollTop: $("#PgFour").offset().top}, 2100);
+	$('html,body').animate({ scrollTop: $("#PgFour").offset().top}, 2100);
 	event.preventDefault();
 	e.stopPropagation;
 }
