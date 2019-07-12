@@ -1,3 +1,41 @@
+function fadein(str) {
+
+    divId = '#' + str;
+    
+    /* Check the location of each desired element */
+    $(divId).each( function(i){
+
+            var bottom_of_object = $(divId).offset().top + (($(divId).outerHeight())/5);
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            /* If the object is completely visible in the window, fade it it */
+            if( bottom_of_window > bottom_of_object ){
+                
+                $(divId).animate({'opacity':'1'},1500);
+                    
+            }
+
+    });
+}
+
+$(document).ready(function() {
+
+    $('.PgOne').each( function(i){
+        $(this).animate({'opacity':'1'},1500);            
+    });
+    
+    $(window).scroll( function() {
+	    fadein('main2', 'full'),
+	    fadein('ME'),
+	    fadein('main3'),
+	    fadein('Student'),
+	    fadein('TA'),
+	    fadein('HCville'),
+	    fadein('Contact')
+	});
+});
+
+
 function scrollToPgTwo() {
 	$('html,body').animate({
 		scrollTop: $("#PgTwo").offset().top}, 700) 
@@ -13,4 +51,5 @@ function scrollToPgFour() {
 	$('html,body').animate({ scrollTop: $("#PgFour").offset().top}, 2100);
 	event.preventDefault();
 	// e.stopPropagation;
+
 }

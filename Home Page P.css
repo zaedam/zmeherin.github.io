@@ -351,6 +351,12 @@ input:-webkit-autofill {
 
 
 
+.PgOne, .main2, .ME, .main3, .Student, .HCville, .TA, 
+.Contact {
+    opacity: 0;
+}
+
+
 @media only screen and (max-width: 1350px) {
     .HiImZ {
         font-size: 40px;
