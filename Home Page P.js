@@ -19,7 +19,10 @@ $(document).ready(function() {
         document.getElementById("body").style.display = "block";
         document.body.style.background = "#e5e5e5";
         $('.PgOne').each( function(i){
-            $(this).animate({'opacity':'1'},1500);            
+            $(this).animate({'opacity':'1'},1500);
+            console.log($(this));
+            console.log($(this)['context']);
+            console.log($(this)[0]);        
         });
     }, 3000);
     
