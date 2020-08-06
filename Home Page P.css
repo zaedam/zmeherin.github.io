@@ -3,7 +3,7 @@ html { /*doesn't work on Safari*/
 }
 
 body {
-    background-color: #E5E5E5;
+    background-color: black;
     margin: 0;
     display: block;
 }
@@ -298,7 +298,7 @@ input[type=text], input[type=email], select, textarea {
   font-size: 20px; /*! change with media query */
   font-weight: 200;
 
-  margin: 6px 0 20px 0;
+  margin: 30px 0 20px 0;
 /*  resize: vertical;*/
 }
 textarea {
@@ -310,7 +310,8 @@ textarea {
 }
 
 input[type=submit] {
-  position: relative;
+    transition: background-color .10s linear;
+    position: relative;
     display: block;
     padding: 19px 39px 18px 39px;
     color: #FFF;
@@ -650,3 +651,52 @@ input:-webkit-autofill {
     transform: rotate(-45deg);
 }
 */
+
+
+/* Loader */
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 15%;
+    border: 10px solid #e5e5e5;
+    border-top: 10px solid #DAA520;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
