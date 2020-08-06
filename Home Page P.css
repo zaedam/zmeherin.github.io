@@ -1,13 +1,14 @@
 html { /*doesn't work on Safari*/
   scroll-behavior: smooth;
 }
-
 body {
     background-color: black;
     margin: 0;
     display: block;
 }
-
+.abt-bold {
+    font-weight: 600;
+}
 .PgOne {
     color: white;
     background-image: url('Pics/Backgrounds/HD/PNG/RH3.png');
@@ -95,12 +96,6 @@ body {
     text-align: center;
     position: absolute;
 }
-/*.L {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    left: 0px;
-}*/
 .Flower {
     position: absolute;
     width: 400px;
@@ -131,7 +126,7 @@ body {
     text-align: center; 
 
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 8%;
     width: 30%;
     padding: 30px;
@@ -142,12 +137,7 @@ body {
     font-size: 50px;
 }
 #PgThree {
-    background-color: black; /*#101519*/
-    background-image: url('Pics/Backgrounds/HD/PitchBlack.jpg'); /*LightBlack*/
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:cover;
-    background-attachment: fixed;
+    background-color: #f2f2f2;
     height: 100%;
     width: 100%;
 }
@@ -160,9 +150,7 @@ body {
 }
 .Experience {
     font-size: 55px; /*! change with media query */
-    font-family: 'Sail', cursive;
-    color: white;
-    
+    font-family: 'Sail', cursive;    
     z-index: 2;
     display: flex; justify-content: center;
     align-items: center;
@@ -187,8 +175,9 @@ body {
 }
 
 .TransparentBox {
+    /*z-index: -1;*/
     font-family: 'Raleway', sans-serif;
-    background-color: rgba(250,250,250,.75);
+    /* background-color: rgba(250,250,250,.75);
     
     display: flex; 
     justify-content: center;
@@ -196,11 +185,10 @@ body {
 
     /*z-index: -1;*/
 
-    height: 100%; width: 70%;
     margin: 50px auto;
     padding: 100px 50px;
 
-    display: block;
+    display: block; */
 }
 .Square {
     display: block;
@@ -216,6 +204,11 @@ body {
 }
 .Logo {
     height: 260px; width: 255px;
+}
+.Cap1 {
+    height: 75px;
+    width: 140px;
+    margin: 45px 140px 35px 15px;
 }
 .LogoImg {
     height: 100px; width: 100px;
@@ -350,8 +343,6 @@ input:-webkit-autofill {
   margin: 0 auto;
 }
 
-
-
 .PgOne, .main2, .ME, .main3, .Student, .HCville, .TA, 
 .Contact {
     opacity: 0;
@@ -367,6 +358,7 @@ input:-webkit-autofill {
 @media only screen and (max-width: 1150px) {
     .MeBlurb {
         left: 5%;
+        font-size: 16px;
     }
     .MeImg {
         width: 85%;
@@ -375,7 +367,7 @@ input:-webkit-autofill {
 
 @media only screen and (max-width: 995px) {
     .MeBlurb {
-        font-size: 17px;
+        font-size: 15px;
     }
     .HiImZ {
         font-size: 38px;
@@ -390,7 +382,11 @@ input:-webkit-autofill {
         margin: 10% auto 5% auto;
     }
 }
-
+@media only screen and (max-width: 995px) {
+    .MeBlurb {
+        top: 10%;
+    }
+}
 @media only screen and (max-width: 850px) {
     .HiImZ {
         font-size: 33px;
@@ -407,7 +403,7 @@ input:-webkit-autofill {
     }
 }
 
-@media only screen and (max-width: 685px) {
+@media only screen and (max-width: 767px) {
     .TransparentBox {
         width: 55%;
     }
@@ -444,6 +440,9 @@ input:-webkit-autofill {
         width: 300px;
         border-radius: 50%;
         margin-top: 6%;
+    }
+    .abt-bold {
+        font-weight: 300;
     }
     .MeBlurb {
         position: relative;

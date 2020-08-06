@@ -19,10 +19,10 @@ $(document).ready(function() {
         document.getElementById("body").style.display = "block";
         document.body.style.background = "#e5e5e5";
         $('.PgOne').each( function(i){
-            $(this).animate({'opacity':'1'},1500);
+            $(this).animate({'opacity':'1'},3000);
             console.log($(this));  
         });
-    }, 3000);
+    }, 1500);
     
     $(window).scroll( function() {
         fadein('main2', 'full'),
