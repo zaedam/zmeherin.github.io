@@ -81,17 +81,6 @@ body {
     height: 100%;
     margin: 0;
 }
-/* #PgTwo {
-    display: flex; 
-    flex-grow: 1;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-    background-color: #E5E5E5;
-    height: 100%;
-    margin: 0;
-} */
 .main2 {
     height: 325px;
     width: 100%;
@@ -146,7 +135,7 @@ body {
     border: 1px solid black;
     box-sizing: border-box;
 }
-.Square {
+.SquareAbt {
     position: absolute;
     width: 230px;
     height: 230px;
@@ -200,7 +189,7 @@ body {
     display: inline-block;
 }
 .AboutMe {
-    font-size: 55px; /*! change with media query */
+    font-size: 55px;
     font-family: 'Sail', cursive;
     width: 100%;
     margin: 7% auto 3% auto;
@@ -232,7 +221,7 @@ body {
     background-color: rgba(190, 85, 115,.75);
     color: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px; /*! change with media query */
+    font-size: 20px;
     line-height: 1.75em;
     text-align: center; 
 
@@ -285,7 +274,7 @@ body {
     z-index: 1;
 }
 .TransparentBox {
-    /*z-index: -1;*/
+    z-index: -1;
     font-family: 'Raleway', sans-serif;
     margin: 50px auto;
     padding: 100px 50px;
@@ -444,8 +433,7 @@ input:-webkit-autofill {
   margin: 0 auto;
 }
 
-.PgOne, .main2, .ME, .main3, .Student, .HCville, .TA, 
-.Contact {
+.PgOne, .main2, .ME, .main3, .Student, .HCville, .TA, .Contact {
     opacity: 0;
 }
 
@@ -660,3 +648,132 @@ input:-webkit-autofill {
     to{ bottom:0; opacity:1 }
   }
   
+
+  
+
+/* .PgTwoImg {
+    position: relative;
+    height: 465px; width: 465px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.CircleGold {
+   
+    z-index:1;
+    width: 390px;
+    height: 390px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 50%;
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+}
+.CircleBlack { 
+    position: absolute;
+    z-index:1;
+    width: 365px;
+    height: 365px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.Square {
+    position: absolute;
+    width: 325px;
+    height: 325px;
+    z-index:2;
+    
+    top: 15%;
+    left: 15%;
+
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+.MeImg {
+    position: absolute;
+    width: 350px;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.AboutMe {
+    font-size: 45px; 
+    font-family: 'Sail', cursive;
+    width: 100%;
+    margin: 10% auto 3% auto;
+    text-align: center;
+}
+.MeBlurb {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.75em;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 125px auto;
+}
+ */
+
+
+
+
+/*.PgTwoImg {
+    height: 325px; width: 325px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.CircleGold { /*250, 287, 263, 230*/
+    /*position: absolute;
+    z-index:1;
+    width: 280px;
+    height: 280px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 50%;
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+}
+.CircleBlack { 
+    position: absolute;
+    z-index:1;
+    width: 263px;
+    height: 263px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.Square {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    z-index:2;
+    
+    top: 15%;
+    left: 15%;
+
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+*/

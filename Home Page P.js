@@ -25,7 +25,7 @@ $(document).ready(function() {
     }, 1500);
     
     $(window).scroll( function() {
-        fadein('main2', 'full'),
+        fadein('main2'),
         fadein('ME'),
         fadein('main3'),
         fadein('Student'),
