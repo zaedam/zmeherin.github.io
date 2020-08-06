@@ -70,7 +70,7 @@ body {
     min-width: 600px;
 }
 #PgTwo {
-    /*position: relative;*/
+    position: relative;
     display: flex; 
     flex-grow: 1;
     align-items: center;
@@ -81,7 +81,118 @@ body {
     height: 100%;
     margin: 0;
 }
+/* #PgTwo {
+    display: flex; 
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #E5E5E5;
+    height: 100%;
+    margin: 0;
+} */
 .main2 {
+    height: 325px;
+    width: 100%;
+}
+.main2 div {
+    display: inline-block;
+}
+.L {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+}
+.R {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: 0px;
+}
+.PgTwoImg {
+    position: relative;
+    height: 325px; width: 325px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.CircleGold { /*250, 287, 263, 230*/
+    position: absolute;
+    z-index:1;
+    width: 280px;
+    height: 280px;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border-radius: 50%;
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+}
+.CircleBlack { 
+    position: absolute;
+    z-index:1;
+    width: 263px;
+    height: 263px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 50%;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.Square {
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    z-index:2;
+    
+    top: 15%;
+    left: 15%;
+
+    border: 2px solid #DAA520;
+    box-sizing: border-box;
+    transform: rotate(-45deg);
+}
+.MeImg {
+    position: absolute;
+    width: 250px;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.AboutMe {
+    font-size: 45px;
+    font-family: 'Sail', cursive;
+    width: 100%;
+    margin: 10% auto 3% auto;
+    text-align: center;
+}
+.MeBlurb {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.75em;
+    text-align: center;
+    width: 50%;
+    margin: 50px auto 125px auto;
+}
+.HiImZ {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 25px;
+}
+.Z {
+    color: #DAA520;
+}
+
+/* .main2 {
     height: 250px;
     width: 100%;
 }
@@ -135,7 +246,7 @@ body {
 .HiImZ {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 50px;
-}
+} */
 #PgThree {
     background-color: #f2f2f2;
     height: 100%;
@@ -173,22 +284,12 @@ body {
     height: 225px;
     z-index: 1;
 }
-
 .TransparentBox {
     /*z-index: -1;*/
     font-family: 'Raleway', sans-serif;
-    /* background-color: rgba(250,250,250,.75);
-    
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-
-    /*z-index: -1;*/
-
     margin: 50px auto;
     padding: 100px 50px;
-
-    display: block; */
+    display: block;
 }
 .Square {
     display: block;
