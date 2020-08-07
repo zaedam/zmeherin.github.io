@@ -208,17 +208,13 @@ body {
     height: 260px; width: 255px;
 }
 .Cap1 {
-    height: 75px;
-    width: 140px;
+    height: 100px;
+    width: 200px;
     margin: 45px 140px 35px 15px;
 }
 .LogoImg {
-    height: 100px; width: 100px;
+    height: 150px; width: 150px;
     margin: 35px 135px 35px 35px;
-}
-.LogoV {
-    height: 75px; width: 110px;
-    margin: 45px 135px 45px 30px;
 }
 .P {
     width: 180px;
@@ -228,8 +224,8 @@ body {
     position: absolute;
     border: 1px solid #DAA520;
     box-sizing: border-box;
-    width: 150px;
-    height: 150px;
+    width: 205px;
+    height: 205px;
     z-index: 1;
 }
 .Sq2 {
@@ -237,14 +233,15 @@ body {
     border: 1px solid #DAA520;
     box-sizing: border-box;
     margin: 15px 0px 0px 15px;
-    width: 150px;
-    height: 150px;
+    width: 205px;
+    height: 205px;
     z-index: 1;
 }
 .Text {
     padding-bottom: 7%;
-    height: 100%; width: 50%;
-    margin: 0 20px;
+    height: 100%; 
+    width: 60%;
+    margin-left: 60px;
     text-align: center;
     line-height: 1.25em;
     font-size: 20px;
@@ -554,21 +551,19 @@ input:-webkit-autofill {
 }
 /* Loader */
 #loader {
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     z-index: 1;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 15%;
-    border: 10px solid #e5e5e5;
-    border-top: 10px solid #DAA520;
+    margin: -75px;
+    border-radius: 10%;
+    border: 8px solid #e5e5e5;
+    border-top: 8px solid #DAA520;
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
+}
   
   @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }
