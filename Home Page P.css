@@ -1,5 +1,6 @@
 html { /*doesn't work on Safari*/
-  scroll-behavior: smooth;
+    position: relative;
+    scroll-behavior: smooth;
 }
 body {
     background-color: black;
@@ -8,6 +9,9 @@ body {
 }
 .abt-bold {
     font-weight: 600;
+}
+.Contact, .Experience, .AboutMe {
+    font-size: 4vw; 
 }
 .PgOne {
     color: white;
@@ -89,7 +93,6 @@ body {
     display: inline-block;
 }
 .AboutMe {
-    font-size: 55px; /*! change with media query */
     font-family: 'Sail', cursive;
     width: 100%;
     margin: 7% auto 3% auto;
@@ -149,7 +152,6 @@ body {
     padding-bottom: 100px;
 }
 .Experience {
-    font-size: 55px; /*! change with media query */
     font-family: 'Sail', cursive;    
     z-index: 2;
     display: flex; justify-content: center;
@@ -264,7 +266,6 @@ body {
     margin-top: 50px;
 }
 .Contact {
-    font-size: 55px; /*! change with media query */
     font-family: 'Sail', cursive;
     text-align: center;
     width: 20%;
@@ -356,6 +357,12 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 1150px) {
+    .Contact, .Experience, .AboutMe {
+        font-size: 50px;
+    }
+    .SeeMore {
+        font-size: 25px;
+    }
     .MeBlurb {
         left: 5%;
         font-size: 16px;
@@ -511,7 +518,40 @@ input:-webkit-autofill {
         font-size: 70px;
     }
 }
-
+#footer {
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    left: 0;
+    bottom: -400px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.GoldBox {
+    background-color: #DAA520;
+    height: fit-content;
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+}
+.SeeMore {
+    font-size: 2vw;
+    margin: 15px;
+}
+.Links {
+    margin: auto;
+    /* margin-left: 25px; */
+}
+.SeeMore, .GitHub, .LinkedIn {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+}
+.GHImg, .LIImg {
+    width: 50px;
+    margin: 25px 15px;
+}
 /* Loader */
 #loader {
     position: absolute;
