@@ -9,6 +9,9 @@ body {
 .abt-bold {
     font-weight: 600;
 }
+.Contact, .Experience, .AboutMe {
+    font-size: 4vw; 
+}
 .PgOne {
     color: white;
     background-image: url('Pics/Backgrounds/HD/PNG/RH3.png');
@@ -82,36 +85,46 @@ body {
     margin: 0;
 }
 .main2 {
-    height: 325px;
+    height: 150px;
     width: 100%;
+}
+.main25 {
+    justify-content: center;
+    display: flex;
+    min-height: 50vh;
+    width: 100%;
+    margin-bottom: 20%;
 }
 .main2 div {
     display: inline-block;
 }
 .L {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     left: 0px;
 }
 .R {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 125px;
+    height: 125px;
     right: 0px;
 }
 .PgTwoImg {
+    display: none !important;
+}
+.PgTwoImg2 {
     position: relative;
-    height: 325px; width: 325px;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 325px;
+    width: 325px;
+    display: inline-block;
+    margin-right: 175px;
 }
 .CircleGold { /*250, 287, 263, 230*/
     position: absolute;
     z-index:1;
-    width: 280px;
-    height: 280px;
+    width: 380px;
+    height: 380px;
     
     top: 50%;
     left: 50%;
@@ -124,8 +137,8 @@ body {
 .CircleBlack { 
     position: absolute;
     z-index:1;
-    width: 263px;
-    height: 263px;
+    width: 363px;
+    height: 363px;
 
     top: 50%;
     left: 50%;
@@ -137,12 +150,12 @@ body {
 }
 .SquareAbt {
     position: absolute;
-    width: 230px;
-    height: 230px;
+    width: 320px;
+    height: 320px;
     z-index:2;
     
-    top: 15%;
-    left: 15%;
+    top: 0%;
+    left: 0%;
 
     border: 2px solid #DAA520;
     box-sizing: border-box;
@@ -150,18 +163,20 @@ body {
 }
 .MeImg {
     position: absolute;
-    width: 250px;
+    width: 350px;
     border-radius: 50%;
 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.About {
+    display: inline-block;
+    width: 40%;
+}
 .AboutMe {
-    font-size: 45px;
     font-family: 'Sail', cursive;
-    width: 100%;
-    margin: 10% auto 3% auto;
+    margin-bottom: 175px;
     text-align: center;
 }
 .MeBlurb {
@@ -170,72 +185,16 @@ body {
     font-weight: 200;
     line-height: 1.75em;
     text-align: center;
-    width: 50%;
-    margin: 50px auto 125px auto;
+    /* width: 50%; */
+    /* margin: 50px auto 125px auto; */
 }
 .HiImZ {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
 }
 .Z {
     color: #DAA520;
 }
-
-/* .main2 {
-    height: 250px;
-    width: 100%;
-}
-.main2 div {
-    display: inline-block;
-}
-.AboutMe {
-    font-size: 55px;
-    font-family: 'Sail', cursive;
-    width: 100%;
-    margin: 7% auto 3% auto;
-    text-align: center;
-    position: absolute;
-}
-.Flower {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    right: 0px;
-    transform: rotate(180deg);
-}
-.ME {
-    position: relative;
-    margin-bottom: 100px;
-}
-.MeImg {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    z-index: 1;
-}
-.MeImgCircle{
-     display: none;
-}
-.MeBlurb {
-    background-color: rgba(190, 85, 115,.75);
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    line-height: 1.75em;
-    text-align: center; 
-
-    position: absolute;
-    top: 15%;
-    left: 8%;
-    width: 30%;
-    padding: 30px;
-    z-index: 2;
-}
-.HiImZ {
-    font-family: 'Julius Sans One', sans-serif;
-    font-size: 50px;
-} */
 #PgThree {
     background-color: #f2f2f2;
     height: 100%;
@@ -249,7 +208,6 @@ body {
     padding-bottom: 100px;
 }
 .Experience {
-    font-size: 55px; /*! change with media query */
     font-family: 'Sail', cursive;    
     z-index: 2;
     display: flex; justify-content: center;
@@ -350,23 +308,27 @@ body {
 
 #PgFour {
     background-color: #E5E5E5;
-    height: 100%; width: 100%;
-    margin-top: 50px;
+    height: 95vh; 
+    width: 100%;
+    position: relative;
 }
+/* .main4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+} */
 .Contact {
-    font-size: 55px; /*! change with media query */
     font-family: 'Sail', cursive;
     text-align: center;
     width: 20%;
     min-width: 140px;
     min-height: 65px;
-    /*margin: 3% auto;*/
-    /*margin: 0 auto 3% auto;
-    padding: 3%;*/
-    margin: 0 auto;
+    margin: 5% auto;
+    /* margin: auto; */
     padding: 50px 0;
 }
-
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
@@ -445,19 +407,93 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 1150px) {
-    .MeBlurb {
-        left: 5%;
-        font-size: 16px;
+    .PgTwoImg2  {
+        display: none
+    }
+    .PgTwoImg {
+        display: inline-block !important;
+        position: relative;
+        height: 325px; width: 325px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .main2 {
+        height: 350px;
+        margin-bottom: 50px;
+    }
+    .CircleGold { /*250, 287, 263, 230*/
+        position: absolute;
+        z-index:1;
+        width: 280px;
+        height: 280px;
+        
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+        border-radius: 50%;
+        border: 2px solid #DAA520;
+        box-sizing: border-box;
+    }
+    .CircleBlack { 
+        position: absolute;
+        z-index:1;
+        width: 263px;
+        height: 263px;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        border-radius: 50%;
+        border: 1px solid black;
+        box-sizing: border-box;
+    }
+    .SquareAbt {
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        z-index:2;
+        
+        top: 15%;
+        left: 15%;
+    
+        border: 2px solid #DAA520;
+        box-sizing: border-box;
+        transform: rotate(-45deg);
     }
     .MeImg {
-        width: 85%;
+        position: absolute;
+        width: 250px;
+        border-radius: 50%;
+    
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .About {
+        width: 100%;
+    }
+    .AboutMe {
+        font-size: 45px;
+        font-family: 'Sail', cursive;
+        width: 100%;
+        margin: 10% auto 3% auto;
+        text-align: center;
+    }
+    .MeBlurb {
+        font-family: 'Raleway', sans-serif;
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.75em;
+        text-align: center;
+        width: 70%;
+        margin: 50px auto 125px auto;
     }
 }
 
 @media only screen and (max-width: 995px) {
-    .MeBlurb {
-        font-size: 15px;
-    }
     .HiImZ {
         font-size: 38px;
     }
@@ -479,9 +515,6 @@ input:-webkit-autofill {
 @media only screen and (max-width: 850px) {
     .HiImZ {
         font-size: 33px;
-    }
-    .MeImg {
-        width: 95%;
     }
     .MeBlurb {
         font-size: 15px;
@@ -517,9 +550,6 @@ input:-webkit-autofill {
         justify-content: center;
         flex-direction: column;
         margin-bottom: 0;
-    }
-    .MeImg {
-        display: none;
     }
     .MeImgCircle {
         position: relative;
