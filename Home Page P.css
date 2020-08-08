@@ -245,15 +245,26 @@ body {
     line-height: 1.25em;
     font-size: 20px;
 }
-.Position{
+.LogoImg, .CompandTime {
+    transition: .5s;
+}
+.LogoImg:hover {
+    height: 200px !important;
+    width: 200px !important;
+}
+.CompandTime:hover {
+    font-size: 28px;
+}
+.Position, .CompandTime {
     font-weight: 600;
     font-size: 25px;
+}
+.Position {
     margin: 25% auto;
     color: #DAA520;
 }
 .CompandTime {
-    font-size: 20px;
-    font-weight: 600;
+    color:cornflowerblue;
 }
 
 #PgFour {
