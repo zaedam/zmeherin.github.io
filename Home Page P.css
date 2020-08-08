@@ -10,8 +10,9 @@ body {
 .abt-bold {
     font-weight: 600;
 }
-.Contact, .Experience, .AboutMe {
+.Contact, .Experience, .AboutMe, .name {
     font-size: 4vw; 
+    font-family: 'Sail', cursive;
 }
 .PgOne {
     color: white;
@@ -38,10 +39,6 @@ body {
     margin-top: 15px;
     padding-left: 15px;
     padding-right: 15px;
-
-            /*position: relative;
-            resize: both;
-            overflow: auto;*/
 }
 .navbar {
     min-width: 600px;
@@ -66,7 +63,6 @@ body {
     padding-bottom: 250px;
 }
 .name {
-    font-family: 'Sail', cursive;
     font-size: 90px; /*! change with media query */
 
     position: absolute;
@@ -84,6 +80,7 @@ body {
     background-color: #E5E5E5;
     height: 100%;
     margin: 0;
+    padding: 50px 0;
 }
 .main2 {
     height: 250px;
@@ -93,7 +90,6 @@ body {
     display: inline-block;
 }
 .AboutMe {
-    font-family: 'Sail', cursive;
     width: 100%;
     margin: 7% auto 3% auto;
     text-align: center;
@@ -143,16 +139,16 @@ body {
     background-color: #f2f2f2;
     height: 100%;
     width: 100%;
+    padding: 100px 0px 0px 0px;
 }
 .main3 {
     display: flex; justify-content: center;
     align-items: center;
     height: 250px;
-    padding-top: 75px;
+    padding-top: 50px;
     padding-bottom: 100px;
 }
-.Experience {
-    font-family: 'Sail', cursive;    
+.Experience { 
     z-index: 2;
     display: flex; justify-content: center;
     align-items: center;
@@ -177,19 +173,25 @@ body {
 }
 .TransparentBox {
     font-family: 'Raleway', sans-serif;
-    margin: 50px auto;
-    padding: 100px 50px;
     display: block;
+    margin: 100px auto;
+    width: 90%;
+    max-width: 1250px;
 }
 .Square {
     display: block;
+    width: 220px;
+    transition: 0.5s;
+}
+.Square:hover {
+    transform: scale(1.05);
 }
 hr.hr {
     border-top: 1px dotted #DAA520;
     width: 50%;
     margin: 15px auto;
 }
-.HCville, .Student, .TA {
+.C1, .Student, .RA, .TextEx, .CSSG {
     width: 100%;
     margin: 0 auto;
     padding-bottom: 140px;
@@ -199,19 +201,25 @@ hr.hr {
     align-items: center;
 }
 .Logo {
-    height: 260px; width: 255px;
-}
-.Cap1 {
-    height: 100px;
-    width: 200px;
-    margin: 45px 140px 35px 15px;
+    width: 220px;
 }
 .LogoImg {
     height: 150px; width: 150px;
     margin: 35px 135px 35px 35px;
 }
+.LogoImgLong {
+    height: 80px;
+    width: 175px;
+    margin: 75px 140px 65px 23px;
+}
+.LogoImgMed {
+    height: 80px;
+    width: 150px;
+    margin: 70px 135px 70px 35px;
+}
 .P {
-    margin: 10px 35px 0 0;
+    margin: 10px 0;
+    line-height: 1.7em;
 }
 .Sq1 {
     position: absolute;
@@ -233,20 +241,10 @@ hr.hr {
 .Text {
     height: 100%; 
     width: 60%;
-    margin-left: 60px;
+    margin: auto 0 auto 60px;
     text-align: center;
     line-height: 1.5em;
     font-size: 18px;
-}
-.LogoImg, .CompandTime {
-    transition: .5s;
-}
-.LogoImg:hover {
-    height: 200px !important;
-    width: 200px !important;
-}
-.CompandTime:hover {
-    font-size: 28px;
 }
 .Position, .CompandTime {
     font-weight: 600;
@@ -266,30 +264,23 @@ hr.hr {
     margin-top: 50px;
 }
 .Contact {
-    font-family: 'Sail', cursive;
     text-align: center;
     width: 20%;
     min-width: 140px;
     min-height: 65px;
-    /*margin: 3% auto;*/
-    /*margin: 0 auto 3% auto;
-    padding: 3%;*/
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 0 0 50px 0;
 }
 
 input[type=text], input[type=email], select, textarea {
   width: 100%;
   padding: 12px;
-  
-  /*border-radius: 4px;*/
-  /*box-sizing: border-box;*/
   background: transparent;
   border: none;
   border-bottom: 1px solid #DAA520;
   outline: none;
   font-family: 'Raleway', sans-serif;
-  font-size: 20px; /*! change with media query */
+  font-size: 20px;
   font-weight: 200;
 
   margin: 30px 0 20px 0;
@@ -320,7 +311,7 @@ input[type=submit] {
   cursor: pointer;
 
   font-family: 'Raleway', sans-serif;
-  font-size: 20px; /*! change with media query */
+  font-size: 20px;
   font-weight: 200;
 }
 input[type="submit"]:hover {
@@ -344,8 +335,7 @@ input:-webkit-autofill {
   margin: 0 auto;
 }
 
-.PgOne, .main2, .ME, .main3, .Student, .HCville, .TA, 
-.Contact {
+.PgOne, .main2, .ME, .main3, .Contact, .Student, .C1, .RA, .TextEx, .CSSG {
     opacity: 0;
 }
 
@@ -411,8 +401,8 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 767px) {
-    .TransparentBox {
-        width: 55%;
+    .abt-bold {
+        color: rgba(190, 85, 115,.75);
     }
     .navbar {
         min-width: 10px;
@@ -448,9 +438,6 @@ input:-webkit-autofill {
         border-radius: 50%;
         margin-top: 6%;
     }
-    .abt-bold {
-        font-weight: 300;
-    }
     .MeBlurb {
         position: relative;
         width: 80%;
@@ -463,26 +450,27 @@ input:-webkit-autofill {
     .HiImZ {
         font-size: 38px;
     }
-    .HCville, .Student, .TA {
+    .main3 {
+        padding-bottom: 200px;
+    }
+    .TransparentBox {
+        width: 80%;
+        padding: 0;
+    }
+    .Text, .CompandTime, .C1, .Student, .RA, .TextEx, .CSSG {
         display: block; 
-        margin: 10% auto;
     }
-    .Text, .Position, .CompandTime {
-        text-align: center;
-        display: flex; 
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
-        width: 70%;
+    .Text, .CompandTime {
+        margin: 0;
+        width: 100%;
     }
-    .Square {
-        width: 165px;
-        margin: 0 0;
-       /* width: 100%;
-        margin: 0 auto;*/
+    .Text {
+        margin-top: 30px;
+    }
+    .P br {
+        display: none;
     }
     .Logo {
-        width: 100%;
         text-align: center;
         display: flex; 
         justify-content: center;
@@ -551,6 +539,10 @@ input:-webkit-autofill {
 .GHImg, .LIImg {
     width: 50px;
     margin: 25px 15px;
+    transition: 0.5s;
+}
+.GHImg:hover, .LIImg:hover {
+    transform: scale(1.4);
 }
 /* Loader */
 #loader {

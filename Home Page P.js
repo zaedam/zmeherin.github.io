@@ -5,9 +5,9 @@ function fadein(str) {
             var bottom_of_object = $(divId).offset().top + (($(divId).outerHeight())/5);
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it it */
+            /* If the object is completely visible in the window, fade it in */
             if( bottom_of_window > bottom_of_object ){
-                $(divId).animate({'opacity':'1'},1500);
+                $(divId).animate({'opacity':'1'}, 1000);
             }
     });
 }
@@ -19,7 +19,7 @@ $(document).ready(function() {
         document.getElementById("body").style.display = "block";
         document.body.style.background = "#e5e5e5";
         $('.PgOne').each( function(i){
-            $(this).animate({'opacity':'1'},3000);
+            $(this).animate({'opacity':'1'}, 3000);
             console.log($(this));  
         });
     }, 1500);
@@ -29,8 +29,10 @@ $(document).ready(function() {
         fadein('ME'),
         fadein('main3'),
         fadein('Student'),
-        fadein('TA'),
-        fadein('HCville'),
+        fadein('RA'),
+        fadein('C1'),
+        fadein('TextEx'),
+        fadein('CSSG'),
         fadein('Contact')
     });
 });
