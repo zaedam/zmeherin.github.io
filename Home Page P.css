@@ -217,8 +217,7 @@ body {
     margin: 35px 135px 35px 35px;
 }
 .P {
-    width: 180px;
-    margin: 20px 0;
+    margin: 10px 35px 0 0;
 }
 .Sq1 {
     position: absolute;
@@ -248,13 +247,13 @@ body {
 }
 .Position{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     margin: 25% auto;
+    color: #DAA520;
 }
 .CompandTime {
-    font-size: 14px;
-    font-weight: 300;
-    font-style: italic;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 #PgFour {
