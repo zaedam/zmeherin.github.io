@@ -238,13 +238,19 @@ hr.hr {
     height: 205px;
     z-index: 1;
 }
-.Text {
+.TextLSm {
+    display: none;
+}
+.TextL, .TextR {
     height: 100%; 
     width: 60%;
     margin: auto 0 auto 60px;
     text-align: center;
     line-height: 1.5em;
     font-size: 18px;
+}
+.TextR {
+    margin: auto 60px auto 0;
 }
 .Position, .CompandTime {
     font-weight: 600;
@@ -347,6 +353,12 @@ input:-webkit-autofill {
 }
 
 @media only screen and (max-width: 1150px) {
+    .TextLSm {
+        display: block;
+    }
+    .TextR {
+        display: none;
+    }
     .Contact, .Experience, .AboutMe {
         font-size: 50px;
     }
@@ -369,7 +381,7 @@ input:-webkit-autofill {
     .HiImZ {
         font-size: 38px;
     }
-    .Text {
+    .TextL {
         font-size: 18px;
     }
     .Flower {
@@ -395,7 +407,7 @@ input:-webkit-autofill {
         font-size: 15px;
         left: 0;
     }
-    .Text {
+    .TextL {
         font-size: 16px;
     }
 }
@@ -457,14 +469,14 @@ input:-webkit-autofill {
         width: 80%;
         padding: 0;
     }
-    .Text, .CompandTime, .C1, .Student, .RA, .TextEx, .CSSG {
+    .TextL, .CompandTime, .C1, .Student, .RA, .TextEx, .CSSG {
         display: block; 
     }
-    .Text, .CompandTime {
+    .TextL, .CompandTime {
         margin: 0;
         width: 100%;
     }
-    .Text {
+    .TextL {
         margin-top: 30px;
     }
     .P br {
