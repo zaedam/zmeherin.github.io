@@ -231,7 +231,7 @@ hr.hr {
 }
 .Sq2 {
     position: absolute;
-    border: 1px solid #DAA520;
+    border: 1px dotted #DAA520;
     box-sizing: border-box;
     margin: 15px 0px 0px 15px;
     width: 205px;
@@ -255,7 +255,7 @@ hr.hr {
     color: #DAA520;
 }
 .CompandTime {
-    color:cornflowerblue;
+    color: black;
 }
 
 #PgFour {
