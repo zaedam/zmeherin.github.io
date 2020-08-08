@@ -1,3 +1,7 @@
+/* Base */
+:root {
+    --gold: #DAA520 !important;
+}
 html { /*doesn't work on Safari*/
     position: relative;
     scroll-behavior: smooth;
@@ -9,6 +13,9 @@ body {
 }
 .abt-bold {
     font-weight: 600;
+}
+.gold {
+    color: var(--gold);
 }
 .Contact, .Experience, .AboutMe, .name {
     font-size: 4vw; 
@@ -64,7 +71,6 @@ body {
 }
 .name {
     font-size: 90px; /*! change with media query */
-
     position: absolute;
     padding-bottom: 10px; /*50px?*/
     min-width: 600px;
@@ -80,7 +86,7 @@ body {
     background-color: #E5E5E5;
     height: 100%;
     margin: 0;
-    padding: 50px 0;
+    padding-bottom: 50px;
 }
 .main2 {
     height: 250px;
@@ -117,7 +123,7 @@ body {
      display: none;
 }
 .MeBlurb {
-    background-color: rgba(190, 85, 115,.75);
+    background-color: rgba(0, 0, 0, .75);
     color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 20px; /*! change with media query */
@@ -155,7 +161,7 @@ body {
 }
 .Rh1 {
     position: absolute;
-    border: 1px solid #DAA520;
+    border: 1px solid var(--gold);
     box-sizing: border-box;
     transform: rotate(33deg);
     width: 225px;
@@ -164,7 +170,7 @@ body {
 }
 .Rh2 {
     position: absolute;
-    border: 1px solid #DAA520;
+    border: 1px solid var(--gold);
     box-sizing: border-box;
     transform: rotate(45deg);
     width: 225px;
@@ -174,7 +180,7 @@ body {
 .TransparentBox {
     font-family: 'Raleway', sans-serif;
     display: block;
-    margin: 100px auto;
+    margin: 25px auto;
     width: 90%;
     max-width: 1250px;
 }
@@ -187,7 +193,7 @@ body {
     transform: scale(1.05);
 }
 hr.hr {
-    border-top: 1px dotted #DAA520;
+    border-top: 1px dotted var(--gold);
     width: 50%;
     margin: 15px auto;
 }
@@ -223,7 +229,7 @@ hr.hr {
 }
 .Sq1 {
     position: absolute;
-    border: 1px solid #DAA520;
+    border: 1px solid var(--gold);
     box-sizing: border-box;
     width: 205px;
     height: 205px;
@@ -231,7 +237,7 @@ hr.hr {
 }
 .Sq2 {
     position: absolute;
-    border: 1px dotted #DAA520;
+    border: 1px dotted var(--gold);
     box-sizing: border-box;
     margin: 15px 0px 0px 15px;
     width: 205px;
@@ -258,7 +264,7 @@ hr.hr {
 }
 .Position {
     margin: 25% auto;
-    color: #DAA520;
+    color: var(--gold);
 }
 .CompandTime {
     color: black;
@@ -283,7 +289,7 @@ input[type=text], input[type=email], select, textarea {
   padding: 12px;
   background: transparent;
   border: none;
-  border-bottom: 1px solid #DAA520;
+  border-bottom: 1px solid var(--gold);
   outline: none;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -293,7 +299,7 @@ input[type=text], input[type=email], select, textarea {
 /*  resize: vertical;*/
 }
 textarea {
-  border: 1px solid #DAA520;
+  border: 1px solid var(--gold);
   height: 150px;
   margin-top: 40px;
   position: static;
@@ -321,7 +327,7 @@ input[type=submit] {
   font-weight: 200;
 }
 input[type="submit"]:hover {
-    background: #DAA520; /*43A8E4*/
+    background: var(--gold); /*43A8E4*/
 }
 input:-webkit-autofill,
 input:-webkit-autofill:hover, 
@@ -414,7 +420,7 @@ input:-webkit-autofill {
 
 @media only screen and (max-width: 767px) {
     .abt-bold {
-        color: rgba(190, 85, 115,.75);
+        color: rgb(50,50,50);
     }
     .navbar {
         min-width: 10px;
@@ -448,16 +454,18 @@ input:-webkit-autofill {
         z-index: 1;
         width: 300px;
         border-radius: 50%;
-        margin-top: 6%;
     }
     .MeBlurb {
         position: relative;
         width: 80%;
-        margin: 15% auto 30% auto;
+        margin: 25px auto;
         left: auto;
         background-color: #E5E5E5;
         color: black;
         font-size: 20px;
+    }
+    br.br3 {
+        display: block !important;
     }
     .HiImZ {
         font-size: 38px;
@@ -530,7 +538,7 @@ input:-webkit-autofill {
     text-align: center;
 }
 .GoldBox {
-    background-color: #DAA520;
+    background-color: var(--gold);
     height: fit-content;
     position: absolute;
     bottom: 70px;
@@ -565,7 +573,7 @@ input:-webkit-autofill {
     margin: -75px;
     border-radius: 10%;
     border: 8px solid #e5e5e5;
-    border-top: 8px solid #DAA520;
+    border-top: 8px solid var(--gold);
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
