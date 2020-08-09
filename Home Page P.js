@@ -21,6 +21,9 @@ $(document).ready(function() {
         $('.PgOne').each( function(i){
             $(this).animate({'opacity':'1'}, 3000);
         });
+        if (screen.width > 1400) {
+            
+        }
     }, 1500);
     
     $(window).scroll( function() {
