@@ -154,8 +154,8 @@ body {
     display: flex; justify-content: center;
     align-items: center;
     height: 250px;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 150px;
+    padding-bottom: 250px;
 }
 .Experience { 
     z-index: 2;
