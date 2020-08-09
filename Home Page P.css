@@ -253,7 +253,7 @@ hr.hr {
     margin: auto 0 auto 60px;
     text-align: center;
     line-height: 1.5em;
-    font-size: 18px;
+    font-size: 17px;
 }
 .TextR {
     margin: auto 60px auto 0;
@@ -386,9 +386,6 @@ input:-webkit-autofill {
     }
     .HiImZ {
         font-size: 38px;
-    }
-    .TextL {
-        font-size: 18px;
     }
     .Flower {
         height: 300px; width: 300px;
