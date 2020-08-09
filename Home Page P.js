@@ -22,7 +22,8 @@ $(document).ready(function() {
             $(this).animate({'opacity':'1'}, 3000);
         });
         if (screen.width > 1400) {
-            
+            document.getElementById("Form").style.borderRadius = "5px";
+            document.getElementById("Form").style.backgroundColor = "#f2f2f2";
         }
     }, 1500);
     

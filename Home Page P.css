@@ -317,7 +317,7 @@ input[type=submit] {
     font-size: 18px;
     text-align: center;
     font-style: normal;
-    width: 40%;
+    width: 200px;
     border: none;
     border-width: 1px 1px 3px;
   cursor: pointer;
@@ -339,8 +339,10 @@ input:-webkit-autofill {
     -webkit-text-fill-color: black !important;
 }
 .Form {
-  width: 500px;
-  margin: 0 auto;
+    min-width: 400px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 25px 75px 1px 75px;
 }
 #PgFive {
     background-color: rgb(50,50,50);
@@ -492,9 +494,6 @@ input:-webkit-autofill {
         align-items: center;
         margin: 0 auto;
     }
-    .Form {
-        width: 400px
-    }
 }
 
 @media only screen and (max-width: 515px) {
@@ -506,9 +505,6 @@ input:-webkit-autofill {
     }
     .MeBlurb {
         margin-top: 25%;
-    }
-    .Form {
-        width: 280px;
     }
 }
 @media only screen and (max-width: 460px) {
