@@ -9,8 +9,13 @@
 	<!-- CSS -->
 	<link rel='stylesheet' href='Home Page P.css' type='text/css'/>
 	<!-- JS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript -->
 	<script src="Home Page P.js"></script>	<!-- jQuery script must come before JS script -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<!-- Font style import -->
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,300i,600');
@@ -31,7 +36,7 @@
 	</style>
 </head>
 
-<body>
+<body style="background-color: black;">
 <div id="loader"></div>
 <div id="body" style="display: none;">
 	<div id="PgOne" class=PgOne>
@@ -81,7 +86,7 @@
 			<div class=Rh2></div>
 		</div>
 		<div class=TransparentBox>
-			<div class=Student id=Student>
+			<div class="Student ExperiEntry" id=Student>
 				<div class=Logo>
 					<div class=Square id=Square>
 						<a href="https://www.virginia.edu/" target="_blank">
@@ -105,7 +110,7 @@
 					I hope to complete one year at graduate school before pursuing a career in software development or product management.
 				</div>
 			</div>
-			<div class=C1 id=C1>
+			<div class="C1 ExperiEntry" id=C1>
 				<div class=TextR>
 					<span class=Position>Software Engineer Intern</span>
 					<hr class=hr>
@@ -141,7 +146,7 @@
 					The values exhibited by this company truly inspires me.
 				</div>
 			</div>
-			<div class=TextEx id=TextEx>
+			<div class="TextEx ExperiEntry" id=TextEx>
 				<div class=Logo>
 					<div class=Square>
 						<a href="http://va-text.herokuapp.com/" target="_blank">
@@ -169,7 +174,7 @@
 					what it is to be passionate about your work and strive for high quality beyond the nearest end goal.
 				</div>
 			</div>
-			<div class=RA id=RA>
+			<div class="RA ExperiEntry" id=RA>
 				<div class=TextR>
 					<span class=Position>Reasearch Assistant</span>
 					<hr class=hr>
@@ -203,7 +208,7 @@
 					I was left with a deeper appreciation of the field that continues to impact me today.
 				</div>
 			</div>
-			<!-- <div class=CSSG id=CSSG>
+			<!-- <div class="CSSG ExperiEntry" id=CSSG>
 				<div class=Logo>
 					<div class=Square>
 						<div class=Sq1></div>
@@ -225,41 +230,41 @@
 		</div> <!-- END TransparentBox -->
 	</div> <!-- END PgThree -->
 	<div id="PgFive" class=PgFive>
-		<div class=Logo>
-			<div class=Square>
-				<a href="https://www.facebook.com/msaattheuva/" target="_blank">
-					<div class=Sq1></div>
-					<div class=Sq2></div>
-					<img src="Pics/Logos/MSA.png" class=LogoImg>
-					<div class=P>
-						<span class="SubheaderBold">MSA</span>
+		<div class="Orgs white" id=Orgs>Orgs</div>
+		<div class="container" style="padding: 100px 0;">
+			<div class="row">
+				<div class="col-sm-12 col-md-4">
+					<div style="width: fit-content; margin: auto;">
+						<a href="https://www.facebook.com/msaattheuva/" target="_blank">
+							<img src="Pics/Logos/MSACircle.png" style="width: 150px;">
+						</a>
 					</div>
-				</a>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div style="width: fit-content; margin: auto;">
+						<a href="https://hackcville.com/" target="_blank">
+							<img src="Pics/Logos/HC.png" style="width: 150px;">
+						</a>
+					</div>
+				</div>
+				<div class="col-sm-12 col-md-4">
+					<div style="width: fit-content; margin: auto;">
+						<a href="Madison House" target="_blank">
+							<img src="Pics/Logos/MH.png" style="width: 150px;">
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class=Logo>
-			<div class=Square>
-				<a href="https://hackcville.com/" target="_blank">
-					<div class=Sq1></div>
-					<div class=Sq2></div>
-					<img src="Pics/Logos/HC.png" class=LogoImg>
-					<div class=P>
-						<span class="SubheaderBold">HackCville</span>
-					</div>
-				</a>
-			</div>
-		</div>
-		<div class=Logo>
-			<div class=Square>
-				<a href="Madison House" target="_blank">
-					<div class=Sq1></div>
-					<div class=Sq2></div>
-					<img src="Pics/Logos/MH.jpg" class=LogoImg>
-					<div class=P>
-						<span class="SubheaderBold">Madison House</span>
-					</div>
-				</a>
-			</div>
+	</div>
+	<div id="PgFour" class=PgFour>
+		<div class=Contact id=Contact>Contact</div>
+		<div class=Form >
+			<form action="mailto:zm5du@virginia.edu" method="GET" target="_blank">
+				<input type="text" name="subject" id="subject" class="input"  placeholder="Subject"><br>
+				<textarea name="body" id="body" class="message-box" placeholder="Message"></textarea>
+				<input type="submit" name="submit" value="Submit">
+			</form>
 		</div>
 	</div>
 	<div id=footer>

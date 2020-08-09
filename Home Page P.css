@@ -7,7 +7,6 @@ html { /*doesn't work on Safari*/
     scroll-behavior: smooth;
 }
 body {
-    background-color: black;
     margin: 0;
     display: block;
 }
@@ -17,7 +16,10 @@ body {
 .gold {
     color: var(--gold);
 }
-.Contact, .Experience, .AboutMe, .name {
+.white {
+    color: white !important;
+}
+.Contact, .Experience, .AboutMe, .Orgs, .name {
     font-size: 4vw; 
     font-family: 'Sail', cursive;
 }
@@ -70,6 +72,7 @@ body {
     padding-bottom: 250px;
 }
 .name {
+    font-family: 'Sail', cursive;
     font-size: 90px; /*! change with media query */
     position: absolute;
     padding-bottom: 10px; /*50px?*/
@@ -197,10 +200,10 @@ hr.hr {
     width: 50%;
     margin: 15px auto;
 }
-.C1, .Student, .RA, .TextEx, .CSSG {
+.ExperiEntry {
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 140px;
+    padding-bottom: 130px;
     display: flex; 
     text-align: center;
     justify-content: center;
@@ -269,13 +272,12 @@ hr.hr {
 .SubheaderBold {
     color: black;
 }
-
 #PgFour {
     background-color: #E5E5E5;
     height: 100%; width: 100%;
     margin-top: 50px;
 }
-.Contact {
+.Contact, .Orgs {
     text-align: center;
     width: 20%;
     min-width: 140px;
@@ -285,23 +287,21 @@ hr.hr {
 }
 
 input[type=text], input[type=email], select, textarea {
-  width: 100%;
-  padding: 12px;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid var(--gold);
-  outline: none;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-
-  margin: 30px 0 20px 0;
-/*  resize: vertical;*/
+  width: 100% !important;
+  padding: 12px !important;
+  background: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid var(--gold) !important;
+  outline: none !important;
+  font-family: 'Raleway', sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 200 !important;
+  margin: 30px 0 20px 0 !important;
 }
 textarea {
-  border: 1px solid var(--gold);
+  border: 1px solid var(--gold) !important;
   height: 150px;
-  margin-top: 40px;
+  margin-top: 40px !important;
   position: static;
   resize: none;
 }
@@ -363,7 +363,7 @@ input:-webkit-autofill {
     .TextR {
         display: none;
     }
-    .Contact, .Experience, .AboutMe {
+    .Contact, .Experience, .AboutMe, .Orgs {
         font-size: 50px;
     }
     .SeeMore {

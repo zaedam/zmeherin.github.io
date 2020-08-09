@@ -20,12 +20,11 @@ $(document).ready(function() {
         document.body.style.background = "#e5e5e5";
         $('.PgOne').each( function(i){
             $(this).animate({'opacity':'1'}, 3000);
-            console.log($(this));  
         });
     }, 1500);
     
     $(window).scroll( function() {
-        fadein('main2', 'full'),
+        fadein('main2'),
         fadein('ME'),
         fadein('main3'),
         fadein('Student'),
