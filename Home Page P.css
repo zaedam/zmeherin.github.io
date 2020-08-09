@@ -258,7 +258,7 @@ hr.hr {
 .TextR {
     margin: auto 60px auto 0;
 }
-.Position, .CompandTime {
+.Position, .SubheaderBold {
     font-weight: 600;
     font-size: 25px;
 }
@@ -266,7 +266,7 @@ hr.hr {
     margin: 25% auto;
     color: var(--gold);
 }
-.CompandTime {
+.SubheaderBold {
     color: black;
 }
 
@@ -339,14 +339,12 @@ input:-webkit-autofill {
     -webkit-text-fill-color: black !important;
 }
 .Form {
-  /*border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;*/
-
   width: 500px;
   margin: 0 auto;
 }
-
+#PgFive {
+    background-color: rgb(50,50,50);
+}
 .PgOne, .main2, .ME, .main3, .Contact, .Student, .C1, .RA, .TextEx, .CSSG {
     opacity: 0;
 }
@@ -474,10 +472,10 @@ input:-webkit-autofill {
         width: 80%;
         padding: 0;
     }
-    .TextL, .CompandTime, .C1, .Student, .RA, .TextEx, .CSSG {
+    .TextL, .SubheaderBold, .C1, .Student, .RA, .TextEx, .CSSG {
         display: block; 
     }
-    .TextL, .CompandTime {
+    .TextL, .SubheaderBold {
         margin: 0;
         width: 100%;
     }
