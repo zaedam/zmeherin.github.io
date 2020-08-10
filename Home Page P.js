@@ -18,6 +18,8 @@ $(document).ready(function() {
         document.getElementById("loader").style.display = "none";
         document.getElementById("body").style.display = "block";
         document.body.style.background = "#e5e5e5";
+
+        // PgOne fades in
         $('.PgOne').each( function(i){
             $(this).animate({'opacity':'1'}, 3000);
         });
