@@ -1,3 +1,5 @@
+var main5loaded = false;
+
 function fadein(str) {
     divId = '#' + str;
     /* Check the location of each desired element */
@@ -5,33 +7,48 @@ function fadein(str) {
             var bottom_of_object = $(divId).offset().top + (($(divId).outerHeight())/5);
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
-            /* If the object is completely visible in the window, fade it in */
+            // If the object is completely visible in the window, fade it in
             if( bottom_of_window > bottom_of_object ){
                 $(divId).animate({'opacity':'1'}, 1000);
+                
+                // Additionally, make bubble chart if Skills section is visible
+                if (str === 'main5' && main5loaded == false) {
+                    makeBubbleChart();
+                    main5loaded = true;
+                }
             }
     });
 }
 
-function makeCharts() {
-    docWidth = document.body.clientWidth;
-    strwidth = docWidth.toString();
-    console.log(strwidth);
-    console.log(docWidth);
-
+function makeBubbleChart() {
     Highcharts.chart('container', {
         chart: {
             type: 'packedbubble',
-            height: '50%',
+            height: '100%',
             backgroundColor: 'rgb(50,50,50)',
-            color: 'white',
-            margin: [100, 100, 100, 100]
         },
         title: false,
         legend: {
-            backgroundColor: '#e5e5e5',
+            backgroundColor: 'rgb(50,50,50)',
             enabled: true,
             align: 'center',
             verticalAlign: 'top',
+    		symbolHeight: 30,
+            symbolPadding: 15,
+            itemMarginBottom: 30,
+            itemWidth: 200,
+            itemStyle: {
+                'fontFamily': 'Raleway',
+                'font-size':'30px',
+                'color': 'white',
+                'textOutline': 'none',
+                'fontWeight': 'normal',
+                'transition':'.5s',
+            },
+            itemHoverStyle: {
+                'color': 'white',
+                'font-size':'32px',
+            }
         },
         tooltip: { enabled: false },
         plotOptions: {
@@ -56,7 +73,8 @@ function makeCharts() {
                         color: 'white',
                         textOutline: 'none',
                         fontWeight: 'normal',
-                        fontSize: '25px'
+                        fontSize: '25px',
+                        fontFamily: 'Raleway',
                     }
                 }
             }
@@ -65,20 +83,24 @@ function makeCharts() {
         {
             name: 'Software',
             data: [
-                { name: "AWS", value: 100 }, // 5
-                { name: "Git", value: 300 }, // 6
-                { name: "Python", value: 1000 }, // 10
-                { name: "Java", value: 700 }, // 7 
-                { name: "Javascript", value: 800 }, // 10
-                { name: "C#", value: 600 }, // 8
-                { name: "C++", value: 50 }, // 3
-                { name: "PHP", value: 75 }, // 3
-                { name: "Django", value: 1000 }, // 10
-                { name: "HTML", value: 400 }, // 5
-                { name: "CSS", value: 400 }, // 5
-                { name: "React.js", value: 200 } // 3
+                { name: "AWS", value: 200 },
+                { name: "Git", value: 300 },
+                { name: "Python", value: 1000 },
+                { name: "Java", value: 700 },
+                { name: "Javascript", value: 800 },
+                { name: "C#", value: 600 },
+                { name: "C++", value: 50 },
+                { name: "PHP", value: 75 },
+                { name: "Django", value: 1000 },
+                { name: "HTML", value: 350 },
+                { name: "CSS", value: 350 },
+                { name: "Bootstrap", value: 350 },
+                { name: "React", value: 75 }
             ],
-            color: "rgba(95, 195, 227, .70)"
+            color: "#9a5d24",
+            marker: {
+                fillOpacity: 1
+            },
         }, 
         {
             name: 'Product',
@@ -87,7 +109,10 @@ function makeCharts() {
                 { name: "Canada", value: 566 }, 
                 { name: "Mexico", value: 456.3 }
             ],
-            color: "rgba(255, 166, 166, .55)"
+            color: "#c0594a",
+            marker: {
+                fillOpacity: 1
+            },
           }
         ]
     });    
@@ -105,7 +130,7 @@ $(document).ready(function() {
             $(this).animate({'opacity':'1'}, 3000);
         });
 
-        makeCharts();
+        main5loaded = false;
     }, 1500);
     
     $(window).scroll( function() {
@@ -117,7 +142,9 @@ $(document).ready(function() {
         fadein('C1'),
         fadein('TextEx'),
         fadein('CSSG'),
-        fadein('Contact')
+        fadein('Contact'),
+        fadein('main5'),
+        fadein('Bubbles')
     });
 });
 
