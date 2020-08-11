@@ -16,6 +16,9 @@
 	<!-- Latest compiled JavaScript -->
 	<script src="Home Page P.js"></script>	<!-- jQuery script must come before JS script -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<!-- Bubble Chart -->
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+	<script src="https://code.highcharts.com/highcharts-more.js"></script>
 	<!-- Font style import -->
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,300i,600');
@@ -79,29 +82,14 @@
 			</div>
 		</div>
 	</div>
-	<div id="PgFive" class=PgFive>
-		<div class="Orgs white" id=Orgs>
+	<div id="PgSkills" class=PgSkills>
+		<div class="main5 white" id=main5>
 			Skills
 		</div>
-		<div class="pg5center" style="height: 500px;">
-			<div class="bubble b1"> 
-				Product backlog
-				<div class="bubble b2"> 
-					Agile
-				</div>
-				<div class="bubble b3 b3-1"> 
-					Stakeholder
-				</div>
-				<div class="bubble b3 b3-2"> 
-					communication
-				</div>
-				<div class="bubble b4"> 
-					User stories
-				</div>
-				<div class="bubble b6"> 
-					Wireframing
-				</div>
-			</div>
+		<div id="Bubbles">
+			<figure class="highcharts-figure">
+				<div id="container"></div>
+			</figure>
 		</div>
 	</div>
 	<div id=PgThree class=PgThree>

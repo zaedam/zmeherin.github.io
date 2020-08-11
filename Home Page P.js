@@ -12,6 +12,87 @@ function fadein(str) {
     });
 }
 
+function makeCharts() {
+    docWidth = document.body.clientWidth;
+    strwidth = docWidth.toString();
+    console.log(strwidth);
+    console.log(docWidth);
+
+    Highcharts.chart('container', {
+        chart: {
+            type: 'packedbubble',
+            height: '50%',
+            backgroundColor: 'rgb(50,50,50)',
+            color: 'white',
+            margin: [100, 100, 100, 100]
+        },
+        title: false,
+        legend: {
+            backgroundColor: '#e5e5e5',
+            enabled: true,
+            align: 'center',
+            verticalAlign: 'top',
+        },
+        tooltip: { enabled: false },
+        plotOptions: {
+            packedbubble: {
+                minSize: '30%',
+                maxSize: '120%',
+                zMin: 0,
+                zMax: 1000,
+                layoutAlgorithm: {
+                    splitSeries: false,
+                    gravitationalConstant: 0.02
+                },
+                dataLabels: {
+                    enabled: true,
+                    format: '{point.name}',
+                    filter: {
+                        property: 'y',
+                        operator: '>',
+                        value: 25
+                    },
+                    style: {
+                        color: 'white',
+                        textOutline: 'none',
+                        fontWeight: 'normal',
+                        fontSize: '25px'
+                    }
+                }
+            }
+        },
+        series: [
+        {
+            name: 'Software',
+            data: [
+                { name: "AWS", value: 100 }, // 5
+                { name: "Git", value: 300 }, // 6
+                { name: "Python", value: 1000 }, // 10
+                { name: "Java", value: 700 }, // 7 
+                { name: "Javascript", value: 800 }, // 10
+                { name: "C#", value: 600 }, // 8
+                { name: "C++", value: 50 }, // 3
+                { name: "PHP", value: 75 }, // 3
+                { name: "Django", value: 1000 }, // 10
+                { name: "HTML", value: 400 }, // 5
+                { name: "CSS", value: 400 }, // 5
+                { name: "React.js", value: 200 } // 3
+            ],
+            color: "rgba(95, 195, 227, .70)"
+        }, 
+        {
+            name: 'Product',
+            data: [
+                { name: "USA", value: 5334.5 }, 
+                { name: "Canada", value: 566 }, 
+                { name: "Mexico", value: 456.3 }
+            ],
+            color: "rgba(255, 166, 166, .55)"
+          }
+        ]
+    });    
+}
+
 $(document).ready(function() {
     // Run this after 2 seconds of loading
     setTimeout(function(){ 
@@ -23,6 +104,8 @@ $(document).ready(function() {
         $('.PgOne').each( function(i){
             $(this).animate({'opacity':'1'}, 3000);
         });
+
+        makeCharts();
     }, 1500);
     
     $(window).scroll( function() {

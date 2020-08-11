@@ -19,7 +19,7 @@ body {
 .white {
     color: white !important;
 }
-.Contact, .Experience, .AboutMe, .Orgs, .name {
+.Contact, .Experience, .AboutMe, .main5, .name {
     font-size: 4vw; 
     font-family: 'Sail', cursive;
 }
@@ -277,7 +277,7 @@ hr.hr {
     height: 100%; width: 100%;
     margin-top: 50px;
 }
-.Contact, .Orgs {
+.Contact, .main5 {
     text-align: center;
     width: 20%;
     min-width: 140px;
@@ -342,67 +342,8 @@ input:-webkit-autofill {
   width: 500px;
   margin: 0 auto;
 }
-#PgFive {
+#PgSkills {
     background-color: rgb(50,50,50);
-    position: relative;
-}
-.bubble {
-    font-family: 'Raleway', sans-serif;
-    background-color: rgba(250, 250, 250, .75);
-    color: white;
-    border-radius: 50%;
-    position: absolute;
-    text-align: center;
-    font-size: 30px;
-}
-.b1 {
-    width: 300px;
-    height: 300px;
-    line-height: 300px;
-    position: relative;
-    margin: auto;
-}
-.b2 {
-    top: 75px;
-    left: -355px;
-    width: 250px;
-    height: 250px;
-    line-height: 250px;
-}
-.b3 {
-    top: 180px;
-    left: -135px;
-    width: 200px;
-    height: 200px;
-}
-.b3-1 {
-    line-height: 190px;
-}
-.b3-2 {
-    line-height: 210px;
-}
-.b4 {
-    top: -19px;
-    left: 300px;
-    width: 170px;
-    height: 170px;
-    line-height: 170px;
-    font-size: 25px;
-}
-.b5 {
-    top: 211px;
-    left: 232px;
-    width: 140px;
-    height: 140px;
-    line-height: 200px;
-}
-.b6 {
-    top: 120px;
-    left: 415px;
-    width: 175px;
-    height: 175px;
-    line-height: 190px;
-    font-size: 25px;
 }
 .PgOne, .main2, .ME, .main3, .Contact, .Student, .C1, .RA, .TextEx, .CSSG {
     opacity: 0;
@@ -422,7 +363,7 @@ input:-webkit-autofill {
     .TextR {
         display: none;
     }
-    .Contact, .Experience, .AboutMe, .Orgs {
+    .Contact, .Experience, .AboutMe, .main5 {
         font-size: 50px;
     }
     .SeeMore {
@@ -663,3 +604,25 @@ input:-webkit-autofill {
     to{ bottom:0; opacity:1 }
   }
   
+/* Bubbles */
+.highcharts-label {
+    font-family: 'Raleway', sans-serif;
+}
+.highcharts-figure, .highcharts-data-table table {
+    margin: 1em auto;
+}
+.highcharts-data-table table {
+	font-family: ;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table tr:hover {
+    background: gray;
+}
