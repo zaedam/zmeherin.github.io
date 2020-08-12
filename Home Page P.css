@@ -555,7 +555,7 @@ input:-webkit-autofill {
         margin: 25px auto;
         left: auto;
         background-color: #E5E5E5;
-        color: black;
+        color: black !important;
         font-size: 20px;
     }
     br.br3 {
