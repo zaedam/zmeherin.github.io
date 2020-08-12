@@ -168,8 +168,8 @@ function scrollToPgTwo() {
     event.preventDefault(); // Prevents page from flashing before scrolling due to race condition
     // e.stopPropagation; //Uncaught ReferenceError: e is not defined
 }
-function scrollToPgThree() {
-    $('html,body').animate({ scrollTop: $("#PgThree").offset().top}, 1400);
+function scrollToPgSkills() {
+    $('html,body').animate({ scrollTop: $("#PgSkills").offset().top}, 1400);
     event.preventDefault();
     // e.stopPropagation;
 }
