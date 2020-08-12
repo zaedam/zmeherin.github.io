@@ -421,7 +421,6 @@ input:-webkit-autofill {
 }
 .Form {
     width: 50%;
-    min-width: 500px;
     margin: auto;
     border-radius: 5px;
     background-color: #f9f9f9;
@@ -488,6 +487,24 @@ input:-webkit-autofill {
 .SkLine2 {
     left: 0;
 }
+@media screen and (max-width: 991px) {
+    .skwrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    .skwrapper div:first-child {
+      order: 1;
+    }
+    .main5 {
+        padding: 25px 0 50px 0;
+    }
+    #skillsDesc {
+        margin: 25px 25px 85px 40px;
+        width: 90%;
+        padding-right: 50px;
+    }
+}
+
 .PgOne, .main2, .ME, .main3, main5, .Bubbles, .Contact, .Student, .C1, .RA, .TextEx, .CSSG, #skillsDesc {
     opacity: 0;
 }
@@ -524,6 +541,9 @@ input:-webkit-autofill {
     }
     .MeImg {
         width: 90%;
+    }
+    .Form {
+        width: 70%;
     }
 }
 
@@ -571,6 +591,9 @@ input:-webkit-autofill {
 @media only screen and (max-width: 850px) {
     .TextL {
         font-size: 16px;
+    }
+    .Form {
+        width: 80%;
     }
 }
 
@@ -622,8 +645,10 @@ input:-webkit-autofill {
     .Flower {
         height: 200px; width: 200px;
     }
-    .AboutMe {
-        margin-top: 20%;
+    .Form {
+        width: 100%;
+        background-color: none;
+        padding: 0 25px;
     }
 }
 @media only screen and (max-width: 460px) {
