@@ -340,7 +340,7 @@ hr.hr {
 }
 .main5 {
     width: 270px;
-    padding: 125px 0 200px 0;
+    padding: 25px 0 100px 0;
 }
 .Consq1L, .Consq1R {
     border: 2px solid var(--gold);
@@ -440,6 +440,9 @@ input:-webkit-autofill {
     font-size: 20px;
     text-align: center;
     /* padding: 75px 25px; */
+    border: 1px dotted var(--gold);
+    padding: 30px;
+    position: relative;
 }
 .Skills { 
     z-index: 2;
@@ -458,6 +461,35 @@ input:-webkit-autofill {
 }
 .SkillsRh2 {
     right: 28px;
+}
+.SkillsSq {
+    height: 100%;
+    width: 100%;
+    top: 20px;
+    left: -15px;
+}
+.SkSq1 {
+    top: 100px;
+    left: 125px;
+}
+.SkSq2, .SkSq3 {
+    top: 105px;
+}
+.SkSq2 {
+    left: 145px;
+}
+.SkSq3 {
+    right: 140px;
+}
+.SkLine1, .SkLine2 {
+    top: 112px;
+    width: 100px;
+}
+.SkLine1 {
+    right: -5px;
+}
+.SkLine2 {
+    left: 0;
 }
 .PgOne, .main2, .ME, .main3, main5, .Bubbles, .Contact, .Student, .C1, .RA, .TextEx, .CSSG, #skillsDesc {
     opacity: 0;
