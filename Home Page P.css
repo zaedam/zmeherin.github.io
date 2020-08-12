@@ -36,9 +36,6 @@ body {
     background-position:center center;
     background-size:cover;
     background-repeat:no-repeat;
-    /*background-origin: padding-box
-    background-clip: border-box
-    */
     background-attachment: fixed;
     background-color: black;
 
@@ -334,9 +331,8 @@ hr.hr {
     margin: 0 auto;
 }
 .main4 {
-    width: 300px;
-    /* padding: 75px 0; */
-    padding: 75px 0 0 0;
+    width: 270px;
+    padding: 75px 0 100px 0;
 }
 .main5 {
     width: 270px;
@@ -426,9 +422,10 @@ input:-webkit-autofill {
 .Form {
     width: 50%;
     min-width: 500px;
-    margin: 25px auto 0px auto;
+    margin: auto;
     border-radius: 5px;
-    /* background-color: #f9f9f9; */
+    background-color: #f9f9f9;
+    padding: 30px 75px 1px 75px;
 }
 #PgSkills {
     background-color: #f1f1f1;
@@ -469,24 +466,24 @@ input:-webkit-autofill {
     z-index: 0;
 }
 .SkSq1 {
-    top: 100px;
-    left: 125px;
+    top: 150px;
+    left: 123px;
 }
 .SkSq2, .SkSq3 {
-    top: 105px;
+    top: 155px;
 }
 .SkSq2 {
-    left: 145px;
+    left: 144px;
 }
 .SkSq3 {
-    right: 140px;
+    right: 143px;
 }
 .SkLine1, .SkLine2 {
-    top: 112px;
+    top: 162px;
     width: 100px;
 }
 .SkLine1 {
-    right: -5px;
+    right: 0;
 }
 .SkLine2 {
     left: 0;
@@ -658,7 +655,6 @@ input:-webkit-autofill {
 }
 .Links {
     margin: auto;
-    /* margin-left: 25px; */
 }
 .SeeMore, .GitHub, .LinkedIn {
     display: inline-block;

@@ -142,15 +142,6 @@ $(document).ready(function() {
             $(this).animate({'opacity':'1'}, 3000);
         });
 
-        // Add white background to contact form if big screen
-        if (screen.width > 1400) {
-            document.getElementById("Form").style.borderRadius = "5px";
-            document.getElementById("Form").style.backgroundColor = "#f9f9f9";
-            document.getElementById("Form").style.padding = "30px 75px 5px 75px";
-        }
-        else 
-            document.getElementById("Form").style.padding = "30px 75px 0px 75px";
-
         main5loaded = false;
     }, 1500);
     
