@@ -19,12 +19,19 @@ body {
 .white {
     color: white !important;
 }
-.Contact, .Experience, .AboutMe, .Orgs, .name {
+.heading, .mega-heading {
     font-size: 4vw; 
     font-family: 'Sail', cursive;
 }
+.AbsGoldSq {
+    position: absolute;
+    border: 1px solid var(--gold);
+    box-sizing: border-box;
+}
+.Rhombus {
+    transform: rotate(45deg);
+}
 .PgOne {
-    color: white;
     background-image: url('Pics/Backgrounds/HD/PNG/RH3.png');
     background-position:center center;
     background-size:cover;
@@ -86,23 +93,80 @@ body {
     justify-content: center;
     flex-direction: column;
 
-    background-color: #E5E5E5;
+    background-color: #e5e5e5;
     height: 100%;
     margin: 0;
     padding-bottom: 50px;
 }
 .main2 {
-    height: 250px;
-    width: 100%;
+    height: 300px;
+    width: 300px;
+    position: relative;
 }
 .main2 div {
     display: inline-block;
 }
 .AboutMe {
     width: 100%;
-    margin: 7% auto 3% auto;
+    margin: 100px auto;
     text-align: center;
     position: absolute;
+}
+.AbtSq1 {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    top: 190px;
+    left: 137px;
+}
+.AbtSqSm {
+    width: 9px;
+    height: 9px;
+    z-index: 1;
+    top: 198px;
+    left: 145px;
+}
+.AbtSq2, .AbtSq3 {
+    width: 15px;
+    height: 15px;
+    z-index: 1;
+    top: 195px;
+}
+.AbtSq2 {
+    left: 157px;
+}
+.AbtSq3 {
+    right: 158px;
+}
+.AbtLine1, .AbtLine2, .AbtLine3, .AbtLine4, .AbtLine5, .AbtLine6 {
+    z-index: 1;
+    top: 202px;
+    border: none;
+    border-top: 1px solid var(--gold);
+}
+.AbtLine1, .AbtLine2 {
+    width: 150px;
+}
+.AbtLine3, .AbtLine4, .AbtLine5, .AbtLine6 {
+    width: 115px;
+}
+.AbtLine1 {
+    right: -25px;
+}
+.AbtLine2 {
+    left: -25px;
+}
+.AbtLine3, .AbtLine5 {
+    top: 196px;
+}
+.AbtLine4, .AbtLine6 {
+    top: 208px;
+}
+.AbtLine3, .AbtLine4 {
+    left: -3px;
+}
+.AbtLine5, .AbtLine6 {
+    right: -3px;
 }
 .Flower {
     position: absolute;
@@ -127,7 +191,6 @@ body {
 }
 .MeBlurb {
     background-color: rgba(0, 0, 0, .75);
-    color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 20px; /*! change with media query */
     line-height: 1.75em;
@@ -145,16 +208,16 @@ body {
     font-size: 50px;
 }
 #PgThree {
-    background-color: #f2f2f2;
+    background-color: #f8f8f8;
     height: 100%;
     width: 100%;
-    padding: 100px 0px 0px 0px;
+    padding: 175px 0px 0px 0px;
 }
 .main3 {
     display: flex; justify-content: center;
     align-items: center;
     height: 250px;
-    padding-top: 150px;
+    padding-top: 50px;
     padding-bottom: 250px;
 }
 .Experience { 
@@ -162,20 +225,13 @@ body {
     display: flex; justify-content: center;
     align-items: center;
 }
-.Rh1 {
-    position: absolute;
-    border: 1px solid var(--gold);
-    box-sizing: border-box;
+.ExperiRh1 {
     transform: rotate(33deg);
     width: 225px;
     height: 225px;
     z-index: 1;
 }
-.Rh2 {
-    position: absolute;
-    border: 1px solid var(--gold);
-    box-sizing: border-box;
-    transform: rotate(45deg);
+.ExperiRh2 {
     width: 225px;
     height: 225px;
     z-index: 1;
@@ -231,17 +287,12 @@ hr.hr {
     line-height: 1.7em;
 }
 .Sq1 {
-    position: absolute;
-    border: 1px solid var(--gold);
-    box-sizing: border-box;
     width: 205px;
     height: 205px;
     z-index: 1;
 }
 .Sq2 {
-    position: absolute;
     border: 1px dotted var(--gold);
-    box-sizing: border-box;
     margin: 15px 0px 0px 15px;
     width: 205px;
     height: 205px;
@@ -273,17 +324,50 @@ hr.hr {
     color: black;
 }
 #PgFour {
-    background-color: #E5E5E5;
+    background-color: #efefef;
     height: 100%; width: 100%;
-    margin-top: 50px;
 }
-.Contact, .Orgs {
+.main4, .main5 {
+    position: relative;
     text-align: center;
-    width: 20%;
-    min-width: 140px;
-    min-height: 65px;
     margin: 0 auto;
-    padding: 50px 0;
+}
+.main4 {
+    width: 300px;
+    /* padding: 75px 0; */
+    padding: 75px 0 0 0;
+}
+.main5 {
+    width: 270px;
+    padding: 25px 0 100px 0;
+}
+.Consq1L, .Consq1R {
+    border: 2px solid var(--gold);
+    top: 102px;
+}
+.Consq1L {
+    left: 0;
+}
+.Consq1R {
+    left: 275px;
+}
+.Consq2L, .Consq3L, .Consq2R, .Consq3R {
+    border: 2px dotted var(--gold);
+    width: 17px;
+    height: 17px;
+    top: 106px;
+}    
+.Consq2L {
+    left: -14px;
+}
+.Consq3L {
+    left: 22px;
+}
+.Consq2R {
+    left: 261px;
+}
+.Consq3R {
+    left: 297px;
 }
 
 input[type=text], input[type=email], select, textarea {
@@ -339,15 +423,74 @@ input:-webkit-autofill {
     -webkit-text-fill-color: black !important;
 }
 .Form {
-    min-width: 400px;
     width: 50%;
-    margin: 0 auto;
-    padding: 25px 75px 1px 75px;
+    min-width: 500px;
+    margin: 25px auto 0px auto;
+    padding: 30px 75px 5px 75px;
+    border-radius: 5px;
+    /* background-color: #f9f9f9; */
 }
-#PgFive {
-    background-color: rgb(50,50,50);
+#PgSkills {
+    background-color: #f1f1f1;
+    padding: 50px 0 100px 0;
 }
-.PgOne, .main2, .ME, .main3, .Contact, .Student, .C1, .RA, .TextEx, .CSSG {
+#skillsDesc {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    /* padding: 75px 25px; */
+    border: 1px dotted var(--gold);
+    padding: 30px;
+    position: relative;
+}
+.Skills { 
+    z-index: 2;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.SkillsRh1, .SkillsRh2 {
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+    top: 65px;
+}
+.SkillsRh1 {
+    left: 28px;
+}
+.SkillsRh2 {
+    right: 28px;
+}
+.SkillsSq {
+    height: 100%;
+    width: 100%;
+    top: 20px;
+    left: -15px;
+}
+.SkSq1 {
+    top: 100px;
+    left: 125px;
+}
+.SkSq2, .SkSq3 {
+    top: 105px;
+}
+.SkSq2 {
+    left: 145px;
+}
+.SkSq3 {
+    right: 140px;
+}
+.SkLine1, .SkLine2 {
+    top: 112px;
+    width: 100px;
+}
+.SkLine1 {
+    right: -5px;
+}
+.SkLine2 {
+    left: 0;
+}
+.PgOne, .main2, .ME, .main3, main5, .Bubbles, .Contact, .Student, .C1, .RA, .TextEx, .CSSG, #skillsDesc {
     opacity: 0;
 }
 
@@ -365,7 +508,7 @@ input:-webkit-autofill {
     .TextR {
         display: none;
     }
-    .Contact, .Experience, .AboutMe, .Orgs {
+    .heading {
         font-size: 50px;
     }
     .SeeMore {
@@ -389,9 +532,6 @@ input:-webkit-autofill {
     }
     .Flower {
         height: 300px; width: 300px;
-    }
-    .AboutMe {
-        margin: 10% auto 5% auto;
     }
 }
 @media only screen and (max-width: 995px) {
@@ -429,9 +569,6 @@ input:-webkit-autofill {
     .name {
         width: 75%;
         min-width: 0px;
-    }
-    .AboutMe {
-        margin: 15% auto 5% auto;
     }
     .ME {
         display: flex; 
@@ -518,15 +655,10 @@ input:-webkit-autofill {
     }
 }
 #footer {
-    display: flex;
-    justify-content: left;
-    position: absolute;
-    left: 0;
-    bottom: -400px;
-    width: 100%;
     background-color: black;
     color: white;
     text-align: center;
+    margin-top: 200px;
 }
 .GoldBox {
     background-color: var(--gold);
@@ -600,3 +732,24 @@ input:-webkit-autofill {
     to{ bottom:0; opacity:1 }
   }
   
+/* Bubbles */
+.highcharts-credits {
+    display: none;
+}
+.highcharts-figure, .highcharts-data-table table {
+    margin: 1em auto;
+}
+.highcharts-data-table table {
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table tr:hover {
+    background: gray;
+}
