@@ -101,6 +101,7 @@ function makeBubbleChart() {
             name: 'Technologies',
             data: [
                 { name: "AWS", value: 100 },
+                { name: "Jira", value: 75 },
                 { name: "Git", value: 500 },
                 { name: "HTML", value: 500 },
                 { name: "CSS", value: 200 },
