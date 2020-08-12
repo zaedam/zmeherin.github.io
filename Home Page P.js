@@ -25,29 +25,27 @@ function makeBubbleChart() {
         chart: {
             type: 'packedbubble',
             height: '100%',
-            backgroundColor: 'rgb(50,50,50)',
+            backgroundColor: '#f2f2f2',
         },
         title: false,
         legend: {
-            backgroundColor: 'rgb(50,50,50)',
+            backgroundColor: '#f2f2f2',
             enabled: true,
             align: 'center',
             verticalAlign: 'top',
     		symbolHeight: 30,
             symbolPadding: 15,
             itemMarginBottom: 30,
-            itemWidth: 200,
+            itemWidth: 300,
             itemStyle: {
                 'fontFamily': 'Raleway',
-                'font-size':'30px',
-                'color': 'white',
+                'font-size':'27px',
                 'textOutline': 'none',
                 'fontWeight': 'normal',
                 'transition':'.5s',
             },
             itemHoverStyle: {
-                'color': 'white',
-                'font-size':'32px',
+                'font-size':'28px',
             }
         },
         tooltip: { enabled: false },
@@ -63,7 +61,10 @@ function makeBubbleChart() {
                 },
                 dataLabels: {
                     enabled: true,
-                    format: '{point.name}',
+                    overflow: "justify",
+                    format: '{point.name}<br/>{point.namept2}',
+                    align: 'center',
+                    crop: true,
                     filter: {
                         property: 'y',
                         operator: '>',
@@ -73,7 +74,7 @@ function makeBubbleChart() {
                         color: 'white',
                         textOutline: 'none',
                         fontWeight: 'normal',
-                        fontSize: '25px',
+                        fontSize: '20px',
                         fontFamily: 'Raleway',
                     }
                 }
@@ -81,10 +82,8 @@ function makeBubbleChart() {
         },
         series: [
         {
-            name: 'Software',
+            name: "Lang's/Frameworks",
             data: [
-                { name: "AWS", value: 200 },
-                { name: "Git", value: 300 },
                 { name: "Python", value: 1000 },
                 { name: "Java", value: 700 },
                 { name: "Javascript", value: 800 },
@@ -92,28 +91,40 @@ function makeBubbleChart() {
                 { name: "C++", value: 50 },
                 { name: "PHP", value: 75 },
                 { name: "Django", value: 1000 },
-                { name: "HTML", value: 350 },
-                { name: "CSS", value: 350 },
-                { name: "Bootstrap", value: 350 },
-                { name: "React", value: 75 }
+                { name: "React", value: 75 },
+            ],
+            color: "#rgb(250,250,250)",
+            marker: {
+                fillOpacity: 1
+            },
+        },
+        {
+            name: 'Technologies',
+            data: [
+                { name: "AWS", value: 100 },
+                { name: "Git", value: 500 },
+                { name: "HTML", value: 500 },
+                { name: "CSS", value: 200 },
+                { name: "Bootstrap", value: 300 },
             ],
             color: "#9a5d24",
             marker: {
                 fillOpacity: 1
             },
-        }, 
+        },
         {
-            name: 'Product',
+            name: 'Design',
             data: [
-                { name: "USA", value: 5334.5 }, 
-                { name: "Canada", value: 566 }, 
-                { name: "Mexico", value: 456.3 }
+                { name: "Wireframing", value: 1000 }, 
+                { name: "UX", namept2: "Research", value: 300 }, 
+                { name: "Feature", namept2: "Prioritization", value: 600 },
+                { name: "Beta", namept2: "testing", value: 200 }
             ],
             color: "#c0594a",
             marker: {
                 fillOpacity: 1
             },
-          }
+        },
         ]
     });    
 }
@@ -123,12 +134,18 @@ $(document).ready(function() {
     setTimeout(function(){ 
         document.getElementById("loader").style.display = "none";
         document.getElementById("body").style.display = "block";
-        document.body.style.background = "#e5e5e5";
+        document.body.style.background = "#e9e9e9";
 
         // PgOne fades in
         $('.PgOne').each( function(i){
             $(this).animate({'opacity':'1'}, 3000);
         });
+
+        // Add white background to contact form if big screen
+        if (screen.width > 1400) {
+            document.getElementById("Form").style.borderRadius = "5px";
+            document.getElementById("Form").style.backgroundColor = "#f2f2f2";
+        }
 
         main5loaded = false;
     }, 1500);
@@ -144,7 +161,8 @@ $(document).ready(function() {
         fadein('CSSG'),
         fadein('Contact'),
         fadein('main5'),
-        fadein('Bubbles')
+        fadein('Bubbles'), 
+        fadein('skillsDesc')
     });
 });
 
