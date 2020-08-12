@@ -500,7 +500,12 @@ input:-webkit-autofill {
         font-size: 40px;
     }
 }
-
+@media only screen and (max-width: 1200px) {
+    .MeBlurb {
+        top: 10%;
+        width: 35%;
+    }
+}
 @media only screen and (max-width: 1150px) {
     .TextLSm {
         display: block;
@@ -515,61 +520,16 @@ input:-webkit-autofill {
         font-size: 25px;
     }
     .MeBlurb {
-        left: 5%;
-        font-size: 16px;
-    }
-    .MeImg {
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 995px) {
-    .MeBlurb {
-        font-size: 15px;
-    }
-    .HiImZ {
-        font-size: 38px;
-    }
-    .Flower {
-        height: 300px; width: 300px;
-    }
-}
-@media only screen and (max-width: 995px) {
-    .MeBlurb {
+        left: 0;
+        width: 40%;
         top: 10%;
     }
-}
-@media only screen and (max-width: 850px) {
-    .HiImZ {
-        font-size: 33px;
-    }
     .MeImg {
-        width: 95%;
-    }
-    .MeBlurb {
-        font-size: 15px;
-        left: 0;
-    }
-    .TextL {
-        font-size: 16px;
+        width: 90%;
     }
 }
 
-@media only screen and (max-width: 767px) {
-    .abt-bold {
-        color: rgb(50,50,50);
-    }
-    .navbar {
-        min-width: 10px;
-        margin-right: 0;
-    }
-    .navbar div {
-        width: 16%;
-    }
-    .name {
-        width: 75%;
-        min-width: 0px;
-    }
+@media only screen and (max-width: 995px) {
     .ME {
         display: flex; 
         flex-grow: 1;
@@ -590,6 +550,8 @@ input:-webkit-autofill {
         border-radius: 50%;
     }
     .MeBlurb {
+        top: 13%;
+        width: 35%;
         position: relative;
         width: 80%;
         margin: 25px auto;
@@ -603,6 +565,31 @@ input:-webkit-autofill {
     }
     .HiImZ {
         font-size: 38px;
+    }
+    .Flower {
+        height: 300px; width: 300px;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .TextL {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .abt-bold {
+        color: rgb(50,50,50);
+    }
+    .navbar {
+        min-width: 10px;
+        margin-right: 0;
+    }
+    .navbar div {
+        width: 16%;
+    }
+    .name {
+        width: 75%;
+        min-width: 0px;
     }
     .main3 {
         padding-bottom: 200px;
@@ -639,9 +626,6 @@ input:-webkit-autofill {
     }
     .AboutMe {
         margin-top: 20%;
-    }
-    .MeBlurb {
-        margin-top: 25%;
     }
 }
 @media only screen and (max-width: 460px) {
