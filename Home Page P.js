@@ -75,7 +75,7 @@ function makeBubbleChart() {
                         fontWeight: 'normal',
                         fontSize: '18px',
                         fontFamily: 'Raleway',
-                        color: 'white',
+                        // color: 'white',
                     }
                 }
             }
@@ -93,7 +93,7 @@ function makeBubbleChart() {
                 { name: "Django", value: 1000 },
                 { name: "React", value: 75 },
             ],
-            color: "#CB4335",
+            color: "#F3EAAF",
             marker: {
                 fillOpacity: 1
             },
@@ -108,7 +108,7 @@ function makeBubbleChart() {
                 { name: "CSS", value: 200 },
                 { name: "Bootstrap", value: 300 },
             ],
-            color: "#D4AC0D",
+            color: "#E7C27D",
             marker: {
                 fillOpacity: 1
             },
@@ -121,7 +121,7 @@ function makeBubbleChart() {
                 { name: "Feature", namept2: "Prioritization", value: 600 },
                 { name: "Beta", namept2: "testing", value: 200 }
             ],
-            color: "#CA6F1E",
+            color: "#DCD2A0",
             marker: {
                 fillOpacity: 1
             },
