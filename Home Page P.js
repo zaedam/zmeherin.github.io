@@ -93,7 +93,7 @@ function makeBubbleChart() {
                 { name: "Django", value: 1000 },
                 { name: "React", value: 75 },
             ],
-            color: "#F3EAAF",
+            color: "#e6cab3",
             marker: {
                 fillOpacity: 1
             },
@@ -108,7 +108,7 @@ function makeBubbleChart() {
                 { name: "CSS", value: 200 },
                 { name: "Bootstrap", value: 300 },
             ],
-            color: "#E7C27D",
+            color: "#d2a679",
             marker: {
                 fillOpacity: 1
             },
@@ -121,7 +121,7 @@ function makeBubbleChart() {
                 { name: "Feature", namept2: "Prioritization", value: 600 },
                 { name: "Beta", namept2: "testing", value: 200 }
             ],
-            color: "#DCD2A0",
+            color: "#996633",
             marker: {
                 fillOpacity: 1
             },
