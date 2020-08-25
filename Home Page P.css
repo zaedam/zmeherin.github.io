@@ -2,9 +2,8 @@
 :root {
     --gold: #DAA520 !important;
 }
-html { /*doesn't work on Safari*/
+html {
     position: relative;
-    /* scroll-behavior: smooth; */
 }
 body {
     margin: 0;
