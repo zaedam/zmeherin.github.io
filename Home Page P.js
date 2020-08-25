@@ -81,51 +81,51 @@ function makeBubbleChart() {
             }
         },
         series: [
-        {
-            name: "Lang's/Frameworks",
-            data: [
-                { name: "Python", value: 1000 },
-                { name: "Java", value: 700 },
-                { name: "Javascript", value: 800 },
-                { name: "C#", value: 600 },
-                { name: "C++", value: 50 },
-                { name: "PHP", value: 75 },
-                { name: "Django", value: 1000 },
-                { name: "React", value: 75 },
-            ],
-            color: "#e6cab3",
-            marker: {
-                fillOpacity: 1
+            {
+                name: "Lang's/Frameworks",
+                data: [
+                    { name: "Python", value: 1000 },
+                    { name: "Java", value: 700 },
+                    { name: "Javascript", value: 800 },
+                    { name: "C#", value: 600 },
+                    { name: "C++", value: 50 },
+                    { name: "PHP", value: 75 },
+                    { name: "Django", value: 1000 },
+                    { name: "React", value: 75 },
+                ],
+                color: "#F3EAAF",
+                marker: {
+                    fillOpacity: 1
+                },
             },
-        },
-        {
-            name: 'Technologies',
-            data: [
-                { name: "AWS", value: 100 },
-                { name: "Jira", value: 75 },
-                { name: "Git", value: 500 },
-                { name: "HTML", value: 500 },
-                { name: "CSS", value: 200 },
-                { name: "Bootstrap", value: 300 },
-            ],
-            color: "#d2a679",
-            marker: {
-                fillOpacity: 1
+            {
+                name: 'Technologies',
+                data: [
+                    { name: "AWS", value: 100 },
+                    { name: "Jira", value: 75 },
+                    { name: "Git", value: 500 },
+                    { name: "HTML", value: 500 },
+                    { name: "CSS", value: 200 },
+                    { name: "Bootstrap", value: 300 },
+                ],
+                color: "#E7C27D",
+                marker: {
+                    fillOpacity: 1
+                },
             },
-        },
-        {
-            name: 'Design',
-            data: [
-                { name: "Wireframing", value: 1000 }, 
-                { name: "UX", namept2: "Research", value: 300 }, 
-                { name: "Feature", namept2: "Prioritization", value: 600 },
-                { name: "Beta", namept2: "testing", value: 200 }
-            ],
-            color: "#996633",
-            marker: {
-                fillOpacity: 1
+            {
+                name: 'Design',
+                data: [
+                    { name: "Wireframing", value: 1000 }, 
+                    { name: "UX", namept2: "Research", value: 300 }, 
+                    { name: "Feature", namept2: "Prioritization", value: 600 },
+                    { name: "Beta", namept2: "testing", value: 200 }
+                ],
+                color: "#DCD2A0",
+                marker: {
+                    fillOpacity: 1
+                },
             },
-        },
         ]
     });    
 }
