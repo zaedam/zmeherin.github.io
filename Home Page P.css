@@ -4,7 +4,7 @@
 }
 html { /*doesn't work on Safari*/
     position: relative;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 }
 body {
     margin: 0;
