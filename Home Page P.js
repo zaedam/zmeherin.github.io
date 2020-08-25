@@ -174,7 +174,7 @@ function scrollToPgSkills() {
     // e.stopPropagation;
 }
 function scrollToPgFour() {
-    $('html,body').animate({ scrollTop: $("#PgFour").offset().top}, 2100);
+    $('html,body').animate({ scrollTop: $("#PgFour").offset().top}, 2500);
     event.preventDefault();
     // e.stopPropagation;
 
